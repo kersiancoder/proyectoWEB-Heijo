@@ -68,7 +68,6 @@ span {
 .titulo {
     text-align: center;
     margin: 0 auto;
-    /* margin-bottom: 100px; */
 }
 
 .portfolioTitle {
@@ -147,8 +146,6 @@ td {
     position: absolute;
     top: 0%;
     left: 0%;
-    /* transform: translate(-50%, -50%); */
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     height: 100%;
