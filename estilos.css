@@ -96,13 +96,13 @@ td {
     margin-right: auto;
 }
 
-.hover figure img {
+.tablaClientes figure img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.hover figure:hover img {
+.tablaClientes figure:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
