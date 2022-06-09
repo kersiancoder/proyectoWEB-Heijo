@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Web Design</title>
-    <style>
-        body {
-            background-color: #EDEDED;
-        }
-    </style>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -29,13 +29,11 @@
     </header>
 
     <div class="title">
-        <h1 style="text-align: center;">Portfolio</h1>
-        <p style="text-align: center;">
-            Ayudamos a construir productos desde la idea hasta el lanzamiento. Somos expertos en diseño web, desarrollo de marca y frontend. Aquí hay algunos de nuestros trabajos.
-        </p>
+        <h1>PORTFOLIO</h1>
+        <p class="titulo">Ayudamos a construir productos desde la idea hasta el lanzamiento. Somos expertos en diseño web, desarrollo de marca y frontend. Aquí hay algunos de nuestros trabajos.</p>
     </div>
-    <div class="portfolio-title" style="text-align: center;">
-        <div class="portfolio-1">
+    <div class="portfolio-title">
+        <!-- <div class="portfolio-1">
             <span>ALL</span>
         </div>
         <div class="portfolio-2">
@@ -46,7 +44,14 @@
         </div>
         <div class="portfolio-4">
             <span>WEB</span>
-        </div>
+        </div> -->
+        <table class="portfolio-title">
+            <tr>
+                <td>ALL</td>
+                <td>BRANDING</td>
+                <td>DESIGN</td>
+                <td>WEB</td>
+            </tr>
     </div>
     <div class="portfolio">
         <table class="portfolio-clientes" align="center">
@@ -60,10 +65,8 @@
             </tr>
         </table>
     </div>
-    <footer>
-        <p style="text-align:center">
-            2022 © WEB DESIGN. All rights reserved.
-        </p>
+    <footer class="footer">
+        <p>2022 © WEB DESIGN. All rights reserved.</p>
 
     </footer>
 </body>

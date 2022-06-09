@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#indexFondo {
+    background-image: url(./images/pattern.png)
+}
+
+#footerInicio {
+    color: white;
+}
+
+#divInicio {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#linkInicio {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #EDEDED;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logos {
+    align-self: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.portfolio-title {
+    text-align: center;
+}
