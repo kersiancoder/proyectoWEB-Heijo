@@ -9,6 +9,7 @@
 
 #footerInicio {
     color: white;
+    font-weight: bold;
 }
 
 #divInicio {
@@ -30,11 +31,26 @@ body {
 
 footer {
     text-align: center;
+    font-weight: bold;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.borde {
+    background: none repeat scroll 0 0 #999;
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 40px;
 }
 
 p {
@@ -51,8 +67,67 @@ span {
 
 .titulo {
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
-.portfolio-title {
+.portfolioTitle {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.portfolioFilter {
+    display: inline-block;
+    padding-right: 15px;
+    
+}
+
+.tablaPortfolio {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.tablaClientes {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hover figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.equipo {
+    text-align: center;
+}
+
+.equipo li {
+    display: inline-block;
+    margin: 0 50px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+    width: 260px;
+}
+
+.contenedor {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.formularioContacto {
     text-align: center;
 }
