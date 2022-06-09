@@ -115,11 +115,9 @@ td {
 .equipo li {
     display: inline-block;
     margin: 0 50px;
-    height: 330px;
     overflow: hidden;
     border-radius: 3px;
     position: relative;
-    width: 260px;
 }
 
 .contenedor {
@@ -130,4 +128,38 @@ td {
 
 .formularioContacto {
     text-align: center;
+}
+
+.contenedorImg:hover .imgEquipo {
+    opacity: 0.3;
+}
+
+.contenedorImg:hover .medio {
+    opacity: 1;
+}
+
+.medio {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imgEquipo {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.imgTexto {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
