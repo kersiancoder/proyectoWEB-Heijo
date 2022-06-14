@@ -223,6 +223,60 @@ a:hover {
     margin-right: auto;
 }
 
+.contenedor__servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor__servicios__izquierda {
+    width: 48%;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 4%;
+    position: relative;
+}
+
+.contenedor__servicios__derecha {
+    width: 48%;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 4%;
+    position: relative;
+}
+
+.fa-stack {
+    font-size: 2em !important;
+    color: #999;
+}
+
+.fa-right {
+    float: right;
+}
+
+.fa-left {
+    float: left;
+}
 
 
 
+.service__item--text-right {
+    text-align: right;
+}
+
+.service__item--text-left {
+    text-align: left;
+}
+
+.service__item .service__item--text-right .fa-stack {
+    margin-bottom: 40px!important;
+}
+
+.service__item {
+    float: left;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.contenedor__servicios {
+    box-sizing: border-box;
+}
