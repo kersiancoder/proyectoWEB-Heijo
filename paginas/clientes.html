@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes - Web Design</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
     <header>
         <div class="navegacion">
             <nav>
-                <ul class="nav">
-                    <li><a href="../index.html"><span class="menu">Home</span></a></li>
-                    <li><a href="./nosotros.html"><span class="menu">Nosotros</span></a></li>
-                    <li><a href="./servicios.html"><span class="menu">Servicios</span></a></li>
-                    <img src="../images/logo.jpg" alt="" id="logoImage">
-                    <li><a href="./clientes.html"><span class="menu" id="active">Clientes</span></a></li>
-                    <li><a href="./portfolio.html"><span class="menu">Portfolio</span></a></li>
-                    <li><a href="./contacto.html"><span class="menu ultimo">Contacto</span></a></li>
+                <ul class="navegacion__nav">
+                    <li><a href="../index.html"><span class="navegacion__nav__menu">Home</span></a></li>
+                    <li><a href="./nosotros.html"><span class="navegacion__nav__menu">Nosotros</span></a></li>
+                    <li><a href="./servicios.html"><span class="navegacion__nav__menu">Servicios</span></a></li>
+                    <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo">
+                    <li><a href="./clientes.html"><span class="navegacion__nav__menu navegacion__nav__menu--activo">Clientes</span></a></li>
+                    <li><a href="./portfolio.html"><span class="navegacion__nav__menu">Portfolio</span></a></li>
+                    <li><a href="./contacto.html"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a></li>
                 </ul>  
             </nav>
         </div>
@@ -33,12 +33,12 @@
     <main>
         <section class="titulo">
             <h1>CLIENTES</h1>
-            <span class="borde"></span>
+            <span class="titulo__borde"></span>
             <p>Trabajamos con grandes marcas. Las alianzas cercanas con clientes realmente geniales nos permiten hacer un trabajo de clase mundial.</p>
         </section>
         <div class="contenedor">
             <section class="clientes">
-                <table class="tablaClientes">
+                <table class="clientes__tabla">
                     <tr>
                         <td><a href="https://google.com.uy/1"><figure><img src="../images/cliente1.jpg" alt="" width="180px"></figure></a></td>
                         <td><a href="https://google.com.uy/2"><figure><img src="../images/cliente2.jpg" alt="" width="180px"></figure></a></td>

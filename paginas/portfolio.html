@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Web Design</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
     <header>
         <div class="navegacion">
             <nav>
-                <ul class="nav">
-                    <li><a href="../index.html"><span class="menu">Home</span></a></li>
-                    <li><a href="./nosotros.html"><span class="menu">Nosotros</span></a></li>
-                    <li><a href="./servicios.html"><span class="menu">Servicios</span></a></li>
-                    <img src="../images/logo.jpg" alt="" width="120px" id="logoImage">
-                    <li><a href="./clientes.html"><span class="menu">Clientes</span></a></li>
-                    <li><a href="./portfolio.html"><span class="menu" id="active">Portfolio</span></a></li>
-                    <li><a href="./contacto.html"><span class="menu ultimo">Contacto</span></a></li>
+                <ul class="navegacion__nav">
+                    <li><a href="../index.html"><span class="navegacion__nav__menu">Home</span></a></li>
+                    <li><a href="./nosotros.html"><span class="navegacion__nav__menu">Nosotros</span></a></li>
+                    <li><a href="./servicios.html"><span class="navegacion__nav__menu">Servicios</span></a></li>
+                    <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo">
+                    <li><a href="./clientes.html"><span class="navegacion__nav__menu">Clientes</span></a></li>
+                    <li><a href="./portfolio.html"><span class="navegacion__nav__menu navegacion__nav__menu--activo">Portfolio</span></a></li>
+                    <li><a href="./contacto.html"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a></li>
                 </ul>  
             </nav>
         </div>
@@ -33,26 +33,26 @@
     <main>
         <section class="titulo">
             <h1>PORTFOLIO</h1>
-            <span class="borde"></span>
+            <span class="titulo__borde"></span>
             <p>Ayudamos a construir productos desde la idea hasta el lanzamiento. Somos expertos en diseño web, desarrollo de marca y frontend. Aquí hay algunos de nuestros trabajos.</p>
         </section>
         <div class="contenedor">
-            <section class="portfolioTitle">
-                <div class="portfolioFilter">
-                    <span>ALL</span>
+            <section class="portfolio__titulo">
+                <div class="portfolio__filter">
+                    <span class="portfolio__filter--activo"><a href="#all">ALL</a></span>
                 </div>
-                <div class="portfolioFilter">
-                    <span>BRANDING</span>
+                <div class="portfolio__filter">
+                    <span><a href="#branding">BRANDING</a></span>
                 </div>
-                <div class="portfolioFilter">
-                    <span>DESIGN</span>
+                <div class="portfolio__filter">
+                    <span><a href="#design">DESIGN</a></span>
                 </div>
-                <div class="portfolioFilter">
-                    <span>WEB</span>
+                <div class="portfolio__filter">
+                    <span><a href="#web">WEB</a></span>
                 </div>
             </section>
             <section class="portfolio">
-                <table class="tablaPortfolio">
+                <table class="portfolio__tabla">
                     <tr>
                         <td><a href="https://google.com.uy/1"><img src="../images/portfolio1.jpg" alt="" width="350px"></a></td>
                         <td><a href="https://google.com.uy/2"><img src="../images/portfolio2.jpg" alt="" width="350px"></a></td>

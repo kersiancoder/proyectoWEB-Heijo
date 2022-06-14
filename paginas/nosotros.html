@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - Web Design</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
     <header>
         <div class="navegacion">
             <nav>
-                <ul class="nav">
-                    <li><a href="../index.html"><span class="menu">Home</span></a></li>
-                    <li><a href="./nosotros.html"><span class="menu" id="active">Nosotros</span></a></li>
-                    <li><a href="./servicios.html"><span class="menu">Servicios</span></a></li>
-                    <img src="../images/logo.jpg" alt="" width="120px" id="logoImage">
-                    <li><a href="./clientes.html"><span class="menu">Clientes</span></a></li>
-                    <li><a href="./portfolio.html"><span class="menu">Portfolio</span></a></li>
-                    <li><a href="./contacto.html"><span class="menu ultimo">Contacto</span></a></li>
+                <ul class="navegacion__nav">
+                    <li><a href="../index.html"><span class="navegacion__nav__menu">Home</span></a></li>
+                    <li><a href="./nosotros.html"><span class="navegacion__nav__menu navegacion__nav__menu--activo">Nosotros</span></a></li>
+                    <li><a href="./servicios.html"><span class="navegacion__nav__menu">Servicios</span></a></li>
+                    <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo">
+                    <li><a href="./clientes.html"><span class="navegacion__nav__menu">Clientes</span></a></li>
+                    <li><a href="./portfolio.html"><span class="navegacion__nav__menu">Portfolio</span></a></li>
+                    <li><a href="./contacto.html"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a></li>
                 </ul>  
             </nav>
         </div>
@@ -33,39 +33,39 @@
     <main>
         <section class="titulo">
             <h1>¿QUIÉNES SOMOS?</h1>
-            <span class="borde"></span>
+            <span class="titulo__borde"></span>
             <p>Somos un equipo cercano de creativos, diseñadores y desarrolladores que trabajan juntos para crear experiencias digitales hermosas y atractivas. Nos enorgullecemos de ofrecer solo lo mejor.</p>
         </section>
         <div class="contenedor">
             <section class="equipo">
                 <ul>
-                    <li class="equipoIzquierda contenedorImg"><img class="imgEquipo" src="../images/carla.jpg" alt="Carla Zarrillo" width="300px">
-                        <div class="medio">
-                            <div class="imgTexto">
+                    <li class="equipo__ambos"><img class="equipo__image" src="../images/carla.jpg" alt="Carla Zarrillo" width="300px">
+                        <div class="equipo__redes">
+                            <div class="equipo__redes__hidden">
                                 <a target="_blank" href="https://www.instagram.com/profile1"><img alt="" src="../images/instagram.png"></a>
                                 <h5>Carla Zarrillo</h5>
                                 <p>CEO Founder</p>
                             </div>
                         </div>
-                        <p class="textoEquipo">
+                        <p>
                             <span>
-                                <h5 class="textoEquipo">Carla Zarrillo</h5>
-                                <p class="textoEquipo">CEO Founder</p>
+                                <h5 class="equipo__redes__texto">Carla Zarrillo</h5>
+                                <p class="equipo__redes__texto">CEO Founder</p>
                             </span>
                         </p>
                     </li>
-                    <li class="equipoDerecha contenedorImg"><img class="imgEquipo" src="../images/maxi.jpg" alt="Maximiliano Heijo" width="300px">
-                        <div class="medio">
-                            <div class="imgTexto">
+                    <li class="equipo__ambos"><img class="equipo__image" src="../images/maxi.jpg" alt="Maximiliano Heijo" width="300px">
+                        <div class="equipo__redes">
+                            <div class="equipo__redes__hidden">
                                 <a target="_blank" href="https://www.instagram.com/profile2"><img alt="" src="../images/instagram.png"></a>
                                 <h5>Maximiliano Heijo</h5>
                                 <p></p>CEO Founder</p>
                             </div>
                         </div>
-                        <p class="textoEquipo">
+                        <p>
                             <span>
-                                <h5 class="textoEquipo">Maximiliano Heijo</h5>
-                                <p class="textoEquipo">CEO Founder</p>
+                                <h5 class="equipo__redes__texto">Maximiliano Heijo</h5>
+                                <p class="equipo__redes__texto">CEO Founder</p>
                             </span>
                         </p>
                     </li>
