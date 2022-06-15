@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
 h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -92,7 +86,7 @@ a:hover {
 
 .inicio__link {
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -200,7 +194,7 @@ a:hover {
     display: block;
     width: 100%;
     height: auto;
-    transition: .9s ease;
+    transition: .6s ease;
 }
 
 .equipo__redes {
@@ -273,7 +267,7 @@ a:hover {
 
 .fa-stack:hover {
     color: black;
-    -webkit-transition: background-color .9s ease,border .9s ease,color .9s ease,opacity .9s ease-in-out,outline .9s ease;
+    -webkit-transition: color .6s ease;
 }
 
 .fa-right {
@@ -318,8 +312,16 @@ a:hover {
     padding: 0!important;
 }
 
+.footer__contenedor {
+    background-color: #cbcbcb;
+}
+
 footer ul.social__icons {
     margin: 10px 0 20px;
+}
+
+.white {
+    color: white;
 }
 
 ul.social__icons {
@@ -342,11 +344,11 @@ ul.social__icons li a img{
     height: 35px;
 }
 
-#menu__top {
+.menu__top {
     background-color: #222;
 }
 
-#menu__top {
+.menu__top {
     height: 50px;
     width: 40px;
     border-radius: 3px;
@@ -357,7 +359,7 @@ ul.social__icons li a img{
     cursor: pointer;
 }
 
-#menu__top__inside {
+.menu__top__inside {
     background-image: url(../images/top_bg.png);
     background-size: 18px 11px;
     background-position: 0 0;
@@ -374,21 +376,21 @@ ul.social__icons li a img{
 }
 
 .img__facebook {
-    opacity: .5;
+    opacity: .6;
 }
 
 .img__facebook:hover {
     opacity: 1;
-    -webkit-transition: background-color .9s ease,border .9s ease,color .9s ease,opacity .9s ease-in-out,outline .9s ease;
+    -webkit-transition: opacity .6s ease-in-out;
 }
 
 .img__instagram {
-    opacity: .5;
+    opacity: .6;
 }
 
 .img__instagram:hover {
     opacity: 1;
-    -webkit-transition: background-color .9s ease,border .9s ease,color .9s ease,opacity .9s ease-in-out,outline .9s ease;
+    -webkit-transition: opacity .6s ease-in-out;
 }
 
 .footer-heart {
@@ -445,10 +447,6 @@ ul.social__icons li a img{
     line-height: 14px;
     cursor: pointer;
     border-radius: 3px;
-    transition: all .3s ease 0s;
-    -moz-transition: all .3s ease 0s;
-    -webkit-transition: all .3s ease 0s;
-    -o-transition: all .3s ease 0s;
     text-align: center;
 }
 
