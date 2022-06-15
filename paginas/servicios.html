@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Web Design</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-
+    <a id="back-top"></a>
     <header>
         <div class="navegacion">
             <nav>
@@ -35,28 +36,30 @@
     </header>
 
     <main>
-        <section class="titulo">
-            <h1>SERVICIOS</h1>
-            <span class="titulo__borde"></span>
-            <p>Creemos que los sitios web no solo deben ser llamativos, sino que en realidad deben proporcionar una excelente experiencia que los usuarios recordarán.</p>
-        </section>
+        <div>
+            <section class="titulo">
+                <h1>SERVICIOS</h1>
+                <span class="titulo__borde"></span>
+                <p>Creemos que los sitios web no solo deben ser llamativos, sino que en realidad deben proporcionar una excelente experiencia que los usuarios recordarán.</p>
+            </section>
+        </div>
         <div class="contenedor">
             <section class="contenedor__servicios">
                 <div class="contenedor__servicios__izquierda">
                     <ul type="none">
                         <li class="service__item service__item--text-right">
                             <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                            <h5>IDENTIDAD Y MARCA</h5>
+                            <h5>Identidad y marca</h5>
                             <p>Un hermoso producto debe complementarse con una gran marca. Nuestro equipo de diseño lo ayudará a crearlo.</p>
                         </li>
                         <li class="service__item service__item--text-right">
-                            <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                            <h5>DISEÑO WEB</h5>
+                            <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-wrench fa-stack-1x fa-inverse service-icon"></i></span>
+                            <h5>Diseño Web</h5>
                             <p>Diseñamos hermosos sitios web receptivos que inspiran con contenido totalmente personalizado y creativo.</p>
                         </li>
                         <li class="service__item service__item--text-right">
-                            <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                            <h5>CLOUD HOSTING</h5>
+                            <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cloud fa-stack-1x fa-inverse service-icon"></i></span>
+                            <h5>Cloud Hosting</h5>
                             <p>Es una reciente y novedosa tipología de hosting o alojamiento basado en tecnología Cloud o “Nube”, de modo tal que la disponibilidad y recursos son suministrados por un número virtualmente ilimitado de nodos.</p>
                         </li>
                     </ul>
@@ -64,18 +67,18 @@
                 <div class="contenedor__servicios__derecha">
                     <ul type="none">
                         <li class="service__item service__item--text-left">
-                            <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                            <h5>EXPERIENCIA DE USUARIO</h5>
+                            <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse service-icon"></i></span>
+                            <h5>Experiencia del usuario</h5>
                             <p>En el corazón de todo lo que hacemos se encuentra una excelente experiencia de usuario. Nos enorgullecemos de nuestras interfaces y realmente las pensamos y probamos.</p>
                         </li>
                         <li class="service__item service__item--text-left">
-                            <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                            <h5>POSICIONAMIENTO SEO</h5>
+                            <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-check fa-stack-1x fa-inverse service-icon"></i></span>
+                            <h5>Posicionamiento SEO</h5>
                             <p>El posicionamiento en buscadores u optimización de motores de búsqueda es el proceso de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.</p>
                         </li>
                         <li class="service__item service__item--text-left">
-                            <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                            <h5>SITIOS CMS</h5>
+                            <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-laptop fa-stack-1x fa-inverse service-icon"></i></span>
+                            <h5>Sitios CMS</h5>
                             <p>Un CMS es un software desarrollado para que cualquier usuario pueda administrar y gestionar contenidos de una web con facilidad y sin conocimientos de programación Web.</p>
                         </li>
                     </ul>
@@ -84,8 +87,15 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <p>2022 © WEB DESIGN. All rights reserved.</p>
+    <footer>
+        <div class="contenedor footer">
+            <a href="#back-top"><div id="menu__top"><div id="menu__top__inside"></div></div></a>
+            <ul class="social__icons">
+                <li><a href="https://facebook.com" target="_blank"><img class="img__facebook" src="../images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img class="img__instagram" src="../images/instagram.png" alt="Instagram"></a></li>
+            </ul>
+            <p class="copyright">2022 © Made with love by Maximiliano</p>
+        </div>    
     </footer>
 
 </body>

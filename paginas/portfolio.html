@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Web Design</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <a id="back-top"></a>
     <header>
         <div class="navegacion">
             <nav>
@@ -66,8 +68,15 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <p>2022 © WEB DESIGN. All rights reserved.</p>
+    <footer>
+        <div class="contenedor footer">
+            <a href="#back-top"><div id="menu__top"><div id="menu__top__inside"></div></div></a>
+            <ul class="social__icons">
+                <li><a href="https://facebook.com" target="_blank"><img class="img__facebook" src="../images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img class="img__instagram" src="../images/instagram.png" alt="Instagram"></a></li>
+            </ul>
+            <p class="copyright">2022 © Made with love by Maximiliano</p>
+        </div>    
     </footer>
 
 </body>
