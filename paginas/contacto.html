@@ -39,25 +39,27 @@
             <p>¿Quieres saludar? ¿Quieres saber más sobre nosotros? Llámenos o envíenos un correo electrónico y nos pondremos en contacto con usted lo antes posible.</p>
         </section>
         <div class="contenedor">
-            <section class="formulario">
-                <form action="">
-                    <p>Nombre: <input type="text" placeholder="Aqui va tu nombre" name="nombre"></p> 
-                    <p>Apellido: <input type="text" placeholder="Aqui va tu apellido" name="apellido"></p>
-                    <p>Email: <input type="email" placeholder="Aqui va tu email" name="email"></p>
-                    <p>¿Desea recibir el Newsletter?<input type="checkbox" name="newsletter" value="si"><label for="newsletter">Sí</label></p>
-                    <label for="estado-civil">Estado civil:</label>
-                    <select name="estado-civil" id="">
-                        <option value="">Seleccionar</option>
-                        <option value="soltero">Soltero/a</option>
-                        <option value="casado">Casado/a</option>
-                        <option value="divorciado">Divorciado/a</option>
-                        <option value="viudo">Viudo/a</option>
-                    </select>
-                    <p>Comentarios</p>
-                    <p><textarea name="comentarios" id="" cols="30" rows="10" placeholder="Ingresar comentarios"></textarea></p>
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar formulario">
-                </form>
+            <section>
+                <div id="formulario">
+                    <form action="">
+                        <p><label for="">Tu Nombre (requerido)</label><br><span><input type="text" placeholder="" name="nombre"></span></p> 
+                        <p><label for="">Tu Email (requerido)</label><br><span><input type="email" placeholder="" name="email"></span></p>
+                        <p><label for="">Asunto</label><br><span><input type="text" placeholder="" name="asunto"></span></p>
+                        <!-- <p>¿Desea recibir el Newsletter?<input type="checkbox" name="newsletter" value="si"><label for="newsletter">Sí</label></p>
+                        <label for="estado-civil">Estado civil:</label>
+                        <select name="estado-civil" id="">
+                            <option value="">Seleccionar</option>
+                            <option value="soltero">Soltero/a</option>
+                            <option value="casado">Casado/a</option>
+                            <option value="divorciado">Divorciado/a</option>
+                            <option value="viudo">Viudo/a</option>
+                        </select> -->
+                        <p><label for="">Tu Mensaje (requerido)</label><br><span><textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea></span></p>
+                        <div class="formulario__botones">
+                            <p><input type="submit" class="formulario__boton" value="Enviar formulario"><input type="reset" value="Limpiar formulario"></p>
+                        </div> 
+                    </form>
+                </div>
             </section>
         </div>
     </main>
