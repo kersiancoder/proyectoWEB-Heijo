@@ -38,13 +38,14 @@ body {
     color: #999;
     }
 
-
 footer {
-    box-shadow: 0 -1px 5px rgb(0 0 0 / 15%);
-    z-index: 100;
-    position: relative;
-    padding: 40px 0;
-    text-align: center;
+        position: relative;
+        text-align: center;
+    }
+
+footer p{
+    color: white;
+    font-weight: bold;
 }
 
 a:link {
@@ -267,7 +268,7 @@ a:hover {
 
 .fa-stack:hover {
     color: black;
-    -webkit-transition: color .6s ease;
+    /* -webkit-transition: color .6s ease; */
 }
 
 .fa-right {
@@ -314,6 +315,9 @@ a:hover {
 
 .footer__contenedor {
     background-color: #cbcbcb;
+    box-shadow: 0 -1px 5px rgb(0 0 0 / 15%);
+    z-index: 100;
+    padding: 40px 0;
 }
 
 footer ul.social__icons {
@@ -381,7 +385,7 @@ ul.social__icons li a img{
 
 .img__facebook:hover {
     opacity: 1;
-    -webkit-transition: opacity .6s ease-in-out;
+    /* -webkit-transition: opacity .6s ease-in-out; */
 }
 
 .img__instagram {
@@ -390,7 +394,7 @@ ul.social__icons li a img{
 
 .img__instagram:hover {
     opacity: 1;
-    -webkit-transition: opacity .6s ease-in-out;
+    /* -webkit-transition: opacity .6s ease-in-out; */
 }
 
 .footer-heart {
@@ -414,10 +418,6 @@ ul.social__icons li a img{
     border-bottom: 0;
     padding-bottom: .3em;
     text-decoration: none;}
-
-.emoji {
-    vertical-align: middle;
-}
 
 #formulario input[type=text], [type=email], textarea {
     color: rgb(0, 0, 0);
