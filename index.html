@@ -12,14 +12,228 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="inicio__background">
+<body>
+
+<!-- <header>
+        <div class="navegacion">
+            <nav>
+                <ul class="navegacion__nav">
+                    <li><a href="#home"><span class="navegacion__nav__menu">Home</span></a></li>
+                    <li><a href="#nosotros"><span class="navegacion__nav__menu">Nosotros</span></a></li>
+                    <li><a href="#servicios"><span class="navegacion__nav__menu navegacion__nav__menu--activo">Servicios</span></a></li>
+                    <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo">
+                    <li><a href="#clientes"><span class="navegacion__nav__menu">Clientes</span></a></li>
+                    <li><a href="#portfolio"><span class="navegacion__nav__menu">Portfolio</span></a></li>
+                    <li><a href="#contacto"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a></li>
+                </ul>  
+            </nav>
+        </div>
+    </header> -->
 
     <main>
-        <section class="inicio">
-            <a href="./paginas/nosotros.html"><h1 class="inicio__link">CONOCENOS</h1></a>
+        <section class="inicio inicio__background" id="home">
+            <a href="#nosotros"><h1 class="inicio__link">CONOCENOS</h1></a><br>
+            <p>Branding<span class="bullet">•</span>Design<span class="bullet">•</span>Responsive<span class="bullet">•</span>SEO <span class="bullet">•</span>E‑Commerce<span class="bullet">•</span>CMS<span class="bullet">•</span>RRSS <span class="bullet">•</span>Cloud&nbsp;Hosting</p>
         </section>
+
+        <div class="navegacion__test">
+            <nav>
+                <ul class="navegacion__nav">
+                    <li><a href="#home"><span class="navegacion__nav__menu">Home</span></a></li>
+                    <li><a href="#nosotros"><span class="navegacion__nav__menu">Nosotros</span></a></li>
+                    <li><a href="#servicios"><span class="navegacion__nav__menu">Servicios</span></a></li>
+                    <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo">
+                    <li><a href="#clientes"><span class="navegacion__nav__menu">Clientes</span></a></li>
+                    <li><a href="#portfolio"><span class="navegacion__nav__menu">Portfolio</span></a></li>
+                    <li><a href="#contacto"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a></li>
+                </ul>  
+            </nav>
+        </div>
+
+        <section class="color__oscuro" id="nosotros">
+            <div class="titulo">
+                <h1>¿QUIÉNES SOMOS?</h1>
+                <span class="titulo__borde"></span>
+                <p>Somos un equipo de jóvenes creativos, diseñadores y desarrolladores comprometidos y apasionados por lo que hacemos. Aportamos creatividad, tecnología, marketing y ejecución profesional.</p>
+            </div>
+            <div class="contenedor ">
+                <article class="equipo">
+                    <ul>
+                        <li class="equipo__ambos"><img class="equipo__image" src="../images/carla.jpg" alt="Carla Zarrillo" width="300px">
+                            <div class="equipo__redes">
+                                <div class="equipo__redes__hidden">
+                                    <a target="_blank" href="https://www.instagram.com/profile1"><img alt="" src="../images/instagram.png"></a>
+                                    <h5>Carla Zarrillo</h5>
+                                    <p class="black">CEO Founder</p>
+                                </div>
+                            </div>
+                            <p>
+                                <span>
+                                    <h5 class="equipo__redes__texto">Carla Zarrillo</h5>
+                                    <p class="equipo__redes__texto--p">CEO Founder</p>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="equipo__ambos"><img class="equipo__image" src="../images/maxi.jpg" alt="Maximiliano Heijo" width="300px">
+                            <div class="equipo__redes">
+                                <div class="equipo__redes__hidden">
+                                    <a target="_blank" href="https://www.instagram.com/profile2"><img alt="" src="../images/instagram.png"></a>
+                                    <h5>Maximiliano Heijo</h5>
+                                    <p class="black">CEO Founder</p>
+                                </div>
+                            </div>
+                            <p>
+                                <span>
+                                    <h5 class="equipo__redes__texto">Maximiliano Heijo</h5>
+                                    <p class="equipo__redes__texto--p">CEO Founder</p>
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+
+            <section class="color__claro" id="servicios">
+                <div class="titulo"></div>
+                    <h1>SERVICIOS</h1>
+                    <span class="titulo__borde"></span>
+                    <p>Creemos que los sitios web no solo deben ser llamativos. Cada negocio es único, con su propia historia, trayectoria y visión</p>
+                </div>
+                <div class="contenedor">
+                    <article class="contenedor__servicios">
+                            <div class="contenedor__servicios__izquierda">
+                                <ul type="none">
+                                    <li class="service__item service__item--text-right">
+                                        <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Identidad y marca</h5>
+                                        <p>El mensaje es el marco, como lo hacemos llegar es la respuesta al problema.</p>
+                                    </li>
+                                    <li class="service__item service__item--text-right">
+                                        <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-wrench fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Diseño Web</h5>
+                                        <p>Trabajamos el desarrollo de tu marca en todos sus ámbitos. Identidad corporativa y creación de marcas.</p>
+                                    </li>
+                                    <li class="service__item service__item--text-right">
+                                        <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cloud fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Cloud Hosting</h5>
+                                        <p>Es una reciente y novedosa tipología de hosting o alojamiento basado en tecnología Cloud o “Nube".</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contenedor__servicios__derecha">
+                                <ul type="none">
+                                    <li class="service__item service__item--text-left">
+                                        <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Experiencia del usuario</h5>
+                                        <p>Desarrollamos tu sitio con diseño centrado en el usuario para generar la mejor experiencia para tus clientes.</p>
+                                    </li>
+                                    <li class="service__item service__item--text-left">
+                                        <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-check fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Posicionamiento SEO</h5>
+                                        <p>El posicionamiento en buscadores u optimización de motores de búsqueda es el proceso de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.</p>
+                                    </li>
+                                    <li class="service__item service__item--text-left">
+                                        <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-laptop fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Sitios CMS</h5>
+                                        <p>Un CMS es un software desarrollado para que cualquier usuario pueda administrar y gestionar contenidos de una web con facilidad y sin conocimientos de programación Web.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                    </article>
+                </div>
+            </section>
+
+        <section class="titulo color__oscuro" id="clientes">
+            <h1>CLIENTES</h1>
+            <span class="titulo__borde"></span>
+            <p>Trabajamos con grandes marcas. Ellos depositaron su confianza  y potenciaron sus proyectos al máximo.</p>
+        </section>
+        <section class="color__oscuro">
+            <div class="contenedor">
+                <section class="clientes">
+                    <table class="clientes__tabla">
+                        <tr>
+                            <td><a href="https://google.com.uy/1"><figure><img src="./images/cliente1.jpg" alt="" width="180px"></figure></a></td>
+                            <td><a href="https://google.com.uy/2"><figure><img src="./images/cliente2.jpg" alt="" width="180px"></figure></a></td>
+                            <td><a href="https://google.com.uy/3"><figure><img src="./images/cliente3.jpg" alt="" width="180px"></figure></a></td>
+                            <td><a href="https://google.com.uy/4"><figure><img src="./images/cliente4.jpg" alt="" width="180px"></figure></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://google.com.uy/5"><figure><img src="./images/cliente5.jpg" alt="" width="180px"></figure></a></td>
+                            <td><a href="https://google.com.uy/6"><figure><img src="./images/cliente6.jpg" alt="" width="180px"></figure></a></td>
+                            <td><a href="https://google.com.uy/7"><figure><img src="./images/cliente7.jpg" alt="" width="180px"></figure></a></td>
+                            <td><a href="https://google.com.uy/8"><figure><img src="./images/cliente8.jpg" alt="" width="180px"></figure></a></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </section>
+        
+
+        <section class="titulo color__claro" id="portfolio">
+            <h1>PORTFOLIO</h1>
+            <span class="titulo__borde"></span>
+            <p>Ayudamos a construir productos desde la idea hasta el lanzamiento. Aquí hay algunos de nuestros trabajos.</p>
+        </section>
+        <section class="color__claro">
+            <div class="contenedor">
+                <section class="portfolio__titulo">
+                    <div class="portfolio__filter">
+                        <span class="portfolio__filter--activo"><a href="#all">ALL</a></span>
+                    </div>
+                    <div class="portfolio__filter">
+                        <span><a href="#branding">BRANDING</a></span>
+                    </div>
+                    <div class="portfolio__filter">
+                        <span><a href="#design">DESIGN</a></span>
+                    </div>
+                    <div class="portfolio__filter">
+                        <span><a href="#web">WEB</a></span>
+                    </div>
+                </section>
+                <section class="portfolio">
+                    <table class="portfolio__tabla">
+                        <tr>
+                            <td><a href="https://google.com.uy/1"><img src="./images/portfolio1.jpg" alt="" width="350px"></a></td>
+                            <td><a href="https://google.com.uy/2"><img src="./images/portfolio2.jpg" alt="" width="350px"></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://google.com.uy/3"><img src="./images/portfolio3.jpg" alt="" width="350px"></a></td>
+                            <td><a href="https://google.com.uy/4"><img src="./images/portfolio4.jpg" alt="" width="350px"></a></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </section>
+
+        <section class="titulo color__oscuro" id="contacto">
+            <h1>CONTACTO</h1>
+            <span class="titulo__borde"></span>
+            <p>Ingresá tus datos y nos contactaremos contigo a la brevedad posible.</p>
+        </section>
+        <section class="color__oscuro">
+            <div class="contenedor">
+                <section>
+                    <div id="formulario">
+                        <form action="">
+                            <p><label for="">Tu Nombre (requerido)</label><br><span><input type="text" placeholder="" name="nombre"></span></p> 
+                            <p><label for="">Tu Email (requerido)</label><br><span><input type="email" placeholder="" name="email"></span></p>
+                            <p><label for="">Asunto</label><br><span><input type="text" placeholder="" name="asunto"></span></p>
+                            <p><label for="">Tu Mensaje (requerido)</label><br><span><textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea></span></p>
+                            <div class="formulario__botones">
+                                <p><input type="submit" class="formulario__boton" value="Enviar"><input type="reset" value="Limpiar"></p>
+                            </div> 
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+
     </main>
 
     <footer class="inicio__footer">

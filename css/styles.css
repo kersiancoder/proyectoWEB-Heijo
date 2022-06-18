@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -38,16 +42,6 @@ body {
     color: #999;
     }
 
-footer {
-        position: relative;
-        text-align: center;
-    }
-
-footer p{
-    color: white;
-    font-weight: bold;
-}
-
 a:link {
     color: rgb(133, 133, 133);
     text-decoration: none;
@@ -69,6 +63,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
 }
 
 .inicio a:visited {
@@ -82,7 +78,8 @@ a:hover {
 }
 
 .inicio__background {
-    background-image: url(../images/pattern.png)
+    background-image: url(../images/pattern.png);
+    height: 100vh;
 }
 
 .inicio__link {
@@ -92,8 +89,9 @@ a:hover {
 }
 
 .inicio__footer {
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    text-align: center;
 }
 
 .navegacion__nav{
@@ -459,4 +457,38 @@ ul.social__icons li a img{
     margin-right: 40px;
 }
 
-/* test */
+.navegacion__test {
+    position: sticky;
+    top: 0;
+    background: 0 0;
+    box-shadow: none!important;
+    min-height: 45px;
+    line-height: 20px!important;
+    transition: all .3s ease-out 0s;
+    border-bottom: none!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    background: #fff;
+    box-shadow: 0 2px 5pxrgba(0,0,0,.1)!important;
+    z-index: 10;
+}
+
+
+#logo {
+    width: 90px;
+    height: 90px;
+} 
+
+.color__oscuro {
+    background-color: #e6e6e6;
+}
+
+.color__claro {
+    background-color: aliceblue;
+}
+
+.bullet {
+    margin: 0 10px;
+    opacity: .9;
+    color: #fff;
+}
