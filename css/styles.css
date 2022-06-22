@@ -92,11 +92,12 @@ a:hover {
     background: 0 0;
     min-height: 45px;
     transition: all .3s ease-out 0s;
-    padding-right: 130px;
+    padding-right: 8.2rem;
     background: #fff;
     box-shadow: 0 2px 5pxrgba(0,0,0,.1)!important;
     z-index: 10;
     height: 50px;
+    line-height: 3rem;
 }
 
 .navegacion__nav__logo {
