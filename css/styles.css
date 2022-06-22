@@ -313,6 +313,12 @@ a:hover {
 
 .footer {
     padding: 0!important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    z-index: 1000;
 }
 
 .footer__contenedor {
