@@ -13,17 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8724dc6190.js" crossorigin="anonymous"></script>
-    <!-- <script>
-        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("test__menu");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    </script> -->
+
 </head>
 
 <body>
@@ -49,14 +39,14 @@ function myFunction() {
             <nav>
                 <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo__mobile">
                 <li class="hamburger show__menu"><i class="fa-solid fa-bars"></i>
-                <div id="test__menu">
-                    <ul class="dropdown__content">
-                        <li class="dropdown__menu"><a href="#home" onclick="myFunction()">Inicio</a></li>
-                        <li class="dropdown__menu"><a href="#nosotros" onclick="myFunction()">Nosotros</a></li>
-                        <li class="dropdown__menu"><a href="#servicios" onclick="myFunction()">Servicios</a></li>
-                        <li class="dropdown__menu"><a href="#clientes" onclick="myFunction()">Clientes</a></li>
-                        <li class="dropdown__menu"><a href="#portfolio" onclick="myFunction()">Portfolio</a></li>                    
-                        <li class="dropdown__menu"><a href="#contacto" onclick="myFunction()">Contacto</a></li>  
+                <div>
+                    <ul id="test__menu" class="dropdown__content">
+                        <li class="dropdown__menu"><a href="#home">Inicio</a></li>
+                        <li class="dropdown__menu"><a href="#nosotros">Nosotros</a></li>
+                        <li class="dropdown__menu"><a href="#servicios">Servicios</a></li>
+                        <li class="dropdown__menu"><a href="#clientes">Clientes</a></li>
+                        <li class="dropdown__menu"><a href="#portfolio">Portfolio</a></li>                    
+                        <li class="dropdown__menu"><a href="#contacto">Contacto</a></li>  
                     </div>                  
                 </ul>
             </nav>
