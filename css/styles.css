@@ -373,13 +373,16 @@ a:hover {
     background-color: white;
     text-align: center;
     z-index: 1000;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .footer__contenedor {
     background-color: #cbcbcb;
     box-shadow: 0 -1px 5px rgb(0 0 0 / 15%);
     z-index: 100;
-    padding: 40px 0;
+    padding: 40px 0 40px 0;
+    min-height: 40px;
 }
 
 footer ul.social__icons {
@@ -542,13 +545,6 @@ ul.social__icons li a img{
     opacity: .9;
     color: #fff;
 }
-
-.footer {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: center;
-}
-
 
 .hamburger {
     position: absolute;
