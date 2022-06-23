@@ -94,7 +94,6 @@ a:hover {
     background: #fff;
     box-shadow: 0 2px 5pxrgba(0,0,0,.1)!important;
     z-index: 10;
-    line-height: 3rem;
 }
 
 .navegacion__nav__menu {
@@ -138,6 +137,17 @@ a:hover {
 #menu_desktop {
     display: none;
 }}
+
+@media only screen and (min-width: 1024px) {
+    .navegacion__nav {
+        line-height: 3rem;
+    }}
+
+@media only screen and (max-width: 1024px) {
+        .navegacion__nav {
+            height: 50px;
+}}
+
 
 @media only screen and (min-width: 1025px) {
     #menu_mobile {
@@ -562,5 +572,13 @@ ul.social__icons li a img{
     z-index: 1;
 }
 
-.navegacion__nav:hover .dropdown__content {display: block;}
+.navegacion__nav:hover .dropdown__content {
+    display: block;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.dropdown__menu {
+    padding: 20px;
+}
 
