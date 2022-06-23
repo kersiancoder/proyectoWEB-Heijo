@@ -31,7 +31,7 @@ li {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    color: #999;
+    color: darkgray;
     font-size: 1rem;
 }
 
@@ -41,24 +41,23 @@ td {
 }
 
 a:link {
-    color: rgb(133, 133, 133);
+    color: darkgray;
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(133, 133, 133);
+    color: darkgray;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
 }
 
 .inicio {
     min-height: 100vh;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,18 +67,19 @@ a:hover {
 }
 
 .inicio a:visited {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: underline;
 }
 
 .inicio a:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+    color: black;
+    background-color: white;
+
 }
 
 .inicio__link {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -138,6 +138,11 @@ a:hover {
     display: none;
 }}
 
+@media only screen and (min-width: 1025px) {
+    #menu_mobile {
+        display: none;
+    }}
+
 @media only screen and (min-width: 1024px) {
     .navegacion__nav {
         line-height: 3rem;
@@ -147,12 +152,6 @@ a:hover {
         .navegacion__nav {
             height: 50px;
 }}
-
-
-@media only screen and (min-width: 1025px) {
-    #menu_mobile {
-        display: none;
-    }}
 
 .equipo {
     text-align: center;
@@ -177,7 +176,6 @@ a:hover {
 .equipo__ambos:hover .equipo__redes__texto--p {
     opacity: 0;
 }
-
 
 .equipo__ambos:hover .equipo__redes {
     opacity: 1;
@@ -367,8 +365,6 @@ a:hover {
     justify-content: center;
 }
 
-
-
 .footer {
     padding: 0!important;
     position: fixed;
@@ -451,7 +447,6 @@ ul.social__icons li a img{
 
 .img__facebook:hover {
     opacity: 1;
-    /* -webkit-transition: opacity .6s ease-in-out; */
 }
 
 .img__instagram {
@@ -460,7 +455,6 @@ ul.social__icons li a img{
 
 .img__instagram:hover {
     opacity: 1;
-    /* -webkit-transition: opacity .6s ease-in-out; */
 }
 
 .footer-heart {
@@ -583,3 +577,20 @@ ul.social__icons li a img{
     padding: 20px;
 }
 
+.borde--blanco {
+    background-color: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+a.button {
+    border-radius: 3px;
+    font-family: montserrat,sans-serif;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.padding--bottom {
+    margin-bottom: 1rem;
+}
