@@ -13,6 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8724dc6190.js" crossorigin="anonymous"></script>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
 </head>
 
 <body>
@@ -21,20 +32,6 @@
             <a href="#nosotros"><h1 class="inicio__link">CONOCENOS</h1></a><br>
             <p>Branding<span class="bullet">•</span>Design<span class="bullet">•</span>Responsive<span class="bullet">•</span>SEO <span class="bullet">•</span>E‑Commerce<span class="bullet">•</span>CMS<span class="bullet">•</span>RRSS <span class="bullet">•</span>Cloud&nbsp;Hosting</p>
         </section>
-
-        <!-- <div class="navegacion__test">
-            <nav>
-                <ul class="navegacion__nav">
-                    <li><a href="#home"><span class="navegacion__nav__menu">Home</span></a></li>
-                    <li><a href="#nosotros"><span class="navegacion__nav__menu">Nosotros</span></a></li>
-                    <li><a href="#servicios"><span class="navegacion__nav__menu">Servicios</span></a></li>
-                    <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo">
-                    <li><a href="#clientes"><span class="navegacion__nav__menu">Clientes</span></a></li>
-                    <li><a href="#portfolio"><span class="navegacion__nav__menu">Portfolio</span></a></li>
-                    <li><a href="#contacto"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a></li>
-                </ul>  
-            </nav>
-        </div> -->
     
         <div class="navegacion__nav">
             <nav id="menu_desktop">
@@ -48,11 +45,11 @@
             </nav>
         </div>
 
-        <!-- <div class="navegacion__nav">
+        <div class="navegacion__nav">
             <nav id="menu_mobile">
-                <<img src="../images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo">
-                <ul>
-                    <li><a href=""><i class="fa-solid fa-bars"></i></a>
+                <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo__mobile">
+                <li class="hamburger show__menu"><i class="fa-solid fa-bars"></i>
+                <ul class="dropdown__content">
                         <ul>
                             <li><a href="#home">Inicio</a></li>
                             <li><a href="#nosotros">Nosotros</a></li>
@@ -64,8 +61,7 @@
                     </li>
                 </ul>
             </nav>
-        </div> -->
-
+        </div>
 
         <section class="color__oscuro" id="nosotros">
             <div class="titulo">

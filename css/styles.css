@@ -70,11 +70,11 @@ a:hover {
 .inicio a:visited {
     color: rgb(255, 255, 255);
     text-decoration: underline;
-}  
+}
 
 .inicio a:hover {
     color: rgb(255, 255, 255);
-    text-decoration: underline;    
+    text-decoration: underline;
 }
 
 .inicio__link {
@@ -134,26 +134,15 @@ a:hover {
     padding: 6rem 1.5rem;
 }
 
-@media only screen and (max-width: 1300px) {
-.contenedor {
-    width: 1104px;
-}}
-
 @media only screen and (max-width: 1024px) {
-    .contenedor {
-        width: 720px;
+#menu_desktop {
+    display: none;
 }}
 
-@media only screen and (max-width: 767px) {
-        .contenedor {
-            width: 480px;
-        }}
-
-@media only screen and (max-width: 479px) {
-            .contenedor {
-                width: 336px;
-}}
-
+@media only screen and (min-width: 1025px) {
+    #menu_mobile {
+        display: none;
+    }}
 
 .equipo {
     text-align: center;
@@ -206,7 +195,7 @@ a:hover {
     color: rgb(0, 0, 0);
     position: relative;
     top: 30%;
-} 
+}
 
 .equipo__redes__texto {
     color: #222;
@@ -226,12 +215,12 @@ a:hover {
         width: 100% !important;
         margin-left: 0% !important;
     }}
-    
+
     @media only screen and (max-width: 1024px) {
     .fa-right {
         float: left !important;
     }}
-    
+
     @media only screen and (max-width: 1024px) {
     .service__item--text-right .fa-stack {
         margin-right: 20px;
@@ -252,7 +241,7 @@ a:hover {
 .service__item--text-right p {
     padding-left: 100px!important;
 }}
-    
+
 .gallery {
     margin: 1%;
 }
@@ -353,13 +342,13 @@ a:hover {
 .portfolio__filter {
     display: inline-block;
     padding-right: 15px;
-    
+
 }
 
 .portfolio__filter--activo {
     font-weight: bold;
     text-decoration: underline;
-    
+
 }
 
 .portfolio {
@@ -472,12 +461,12 @@ ul.social__icons li a img{
 .footer-heart a {
     border-bottom: 1px solid #000000;
     color: #000000;
-    padding-bottom: .25em; 
+    padding-bottom: .25em;
     text-decoration: none;
 }
 
 .footer-heart a:hover {
-    color:#ff0000; 
+    color:#ff0000;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     background-position: bottom;
     background-repeat: repeat-x;
@@ -529,7 +518,12 @@ ul.social__icons li a img{
     width: 90px;
     height: 90px;
     position: absolute;
-} 
+}
+
+#logo__mobile {
+    width: 60px;
+    height: 60px;
+}
 
 .color__oscuro {
     background-color: #e6e6e6;
@@ -550,3 +544,23 @@ ul.social__icons li a img{
     font-weight: bold;
     text-align: center;
 }
+
+
+.hamburger {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+ .dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.navegacion__nav:hover .dropdown__content {display: block;}
+
