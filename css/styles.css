@@ -90,18 +90,11 @@ a:hover {
     position: sticky;
     top: 0;
     background: 0 0;
-    min-height: 45px;
-    transition: all .3s ease-out 0s;
-    padding-right: 8.2rem;
+    padding-left: 1.5rem;
     background: #fff;
     box-shadow: 0 2px 5pxrgba(0,0,0,.1)!important;
     z-index: 10;
-    height: 50px;
     line-height: 3rem;
-}
-
-.navegacion__nav__logo {
-    margin-right: 40px;
 }
 
 .navegacion__nav__menu {
@@ -112,6 +105,10 @@ a:hover {
     font-size: 1.2rem;
 }
 
+.nav__menu__derecha{
+    margin-left: 9.625rem;
+}
+
 .navegacion__nav__menu--ultimo {
     margin-right: 0rem;
 }
@@ -119,6 +116,7 @@ a:hover {
 .titulo {
     text-align: center;
     padding-top: 4rem;
+    margin: 0px 10px 0px 10px;
 }
 
 .titulo__borde {
@@ -135,6 +133,27 @@ a:hover {
     margin: 0 auto;
     padding: 6rem 1.5rem;
 }
+
+@media only screen and (max-width: 1300px) {
+.contenedor {
+    width: 1104px;
+}}
+
+@media only screen and (max-width: 1024px) {
+    .contenedor {
+        width: 720px;
+}}
+
+@media only screen and (max-width: 767px) {
+        .contenedor {
+            width: 480px;
+        }}
+
+@media only screen and (max-width: 479px) {
+            .contenedor {
+                width: 336px;
+}}
+
 
 .equipo {
     text-align: center;
@@ -202,6 +221,38 @@ a:hover {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+    .one__half {
+        width: 100% !important;
+        margin-left: 0% !important;
+    }}
+    
+    @media only screen and (max-width: 1024px) {
+    .fa-right {
+        float: left !important;
+    }}
+    
+    @media only screen and (max-width: 1024px) {
+    .service__item--text-right .fa-stack {
+        margin-right: 20px;
+        margin-left: 0px !important;
+    }}
+
+    @media only screen and (max-width: 1024px) {
+    .service__item--text-right {
+        text-align: left !important;
+    }}
+
+    @media only screen and (max-width: 1024px) {
+    .contenedor__servicios__izquierda {
+        margin-bottom: 0px !important;
+    }}
+
+    @media only screen and (max-width: 1024px) {
+.service__item--text-right p {
+    padding-left: 100px!important;
+}}
+    
 .gallery {
     margin: 1%;
 }
@@ -212,6 +263,8 @@ a:hover {
 
 .contenedor__servicios {
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .contenedor__servicios__izquierda {
@@ -253,6 +306,10 @@ a:hover {
 
 .service__item--text-left {
     text-align: left;
+}
+
+.service__item--text-left p {
+    padding-left: 100px;
 }
 
 .service__item--text-left .fa-stack {
