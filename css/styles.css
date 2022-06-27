@@ -234,14 +234,16 @@ a:hover {
     justify-content: center;
     max-width: 850px;
     margin: 0 auto;
-}
-
-.gallery {
-    margin: 1%;
+    gap: 25px;
 }
 
 .gallery__portfolio {
     max-width: 380px;
+    transition: transform 0.6s;
+}
+
+.gallery__portfolio:hover {
+    transform: scale(1.1);
 }
 
 .contenedor__servicios {
@@ -349,6 +351,7 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 25px;
 }
 
 .footer {
@@ -576,3 +579,11 @@ a.button {
 .padding--bottom {
     margin-bottom: 1rem;
 }
+
+.clientes__img {
+    transition: transform 0.6s;
+}
+
+.clientes__img:hover {
+    transform: scale(1.2);
+} 
