@@ -13,7 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8724dc6190.js" crossorigin="anonymous"></script>
-
+    <script>
+        function toggleMenu() {
+        document.getElementById("hamburger__menu").classList.toggle("show__menu");
+        }
+        function hideMenu() {
+        document.getElementById("hamburger__menu").classList.remove("show__menu");
+        }
+    </script>
 </head>
 
 <body>
@@ -39,15 +46,15 @@
         <div class="navegacion__nav" id="menu_mobile">
             <nav>
                 <img src="../images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo__mobile">
-                <li class="hamburger show__menu"><i class="fa-solid fa-bars"></i>
-                <div>
-                    <ul id="test__menu" class="dropdown__content">
-                        <li class="dropdown__menu"><a href="#home">Inicio</a></li>
-                        <li class="dropdown__menu"><a href="#nosotros">Nosotros</a></li>
-                        <li class="dropdown__menu"><a href="#servicios">Servicios</a></li>
-                        <li class="dropdown__menu"><a href="#clientes">Clientes</a></li>
-                        <li class="dropdown__menu"><a href="#portfolio">Portfolio</a></li>                    
-                        <li class="dropdown__menu"><a href="#contacto">Contacto</a></li>  
+                <li class="hamburger"><i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                <div id="hamburger__menu" class="dropdown__content">
+                    <ul >
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#home">Inicio</a></li>
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#nosotros">Nosotros</a></li>
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#servicios">Servicios</a></li>
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#clientes">Clientes</a></li>
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>                    
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#contacto">Contacto</a></li>  
                     </div>                  
                 </ul>
             </nav>

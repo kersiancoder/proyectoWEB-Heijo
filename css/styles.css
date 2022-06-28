@@ -505,6 +505,10 @@ ul.social__icons li a img{
 
 .dropdown__content {
     display: none;
+}
+
+.show__menu {
+    display: block;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 300px;
@@ -512,12 +516,7 @@ ul.social__icons li a img{
     font-size: 1.2rem;
     z-index: 1;
     clear: both;
-}
-
-#menu_mobile .hamburger:hover .dropdown__content {
-    display: block;
     margin-top: 10px;
-    z-index: -1;
 }
 
 .dropdown__menu {
