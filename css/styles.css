@@ -530,6 +530,13 @@ ul.social__icons li a img{
 
 .dropdown__menu {
     padding: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+}
+
+.dropdown__menu a {
+    color: black;
 }
 
 .borde--blanco {
