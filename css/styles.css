@@ -202,10 +202,12 @@ a:hover {
 .gallery__portfolio {
     max-width: 380px;
     transition: transform 0.6s;
+    opacity: 0.8;
 }
 
 .gallery__portfolio:hover {
     transform: scale(1.1);
+    opacity: 1;
 }
 
 .contenedor__servicios {
@@ -286,10 +288,17 @@ a:hover {
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    width: 100%;
+    height: 100%;
 }
-.clientes div:hover img {
+.clientes picture:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.clientes picture {
+    overflow: hidden;
 }
 
 .portfolio__titulo {
@@ -544,10 +553,6 @@ a.button {
 .clientes__img {
     transition: transform 0.6s;
 }
-
-.clientes__img:hover {
-    transform: scale(1.2);
-} 
 
 @media only screen and (max-width: 1024px) {
     #menu_desktop {
