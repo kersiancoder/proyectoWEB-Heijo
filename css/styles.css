@@ -195,7 +195,7 @@ a:hover {
     justify-content: center;
     max-width: 850px;
     margin: 0 auto;
-    gap: 25px;
+    gap: 28px;
 }
 
 .gallery__portfolio {
@@ -285,8 +285,8 @@ a:hover {
 .clientes img {
 	filter: grayscale(100%);
 	transition: .3s ease-in-out;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
 }
 .clientes picture:hover img {
 	filter: grayscale(0);
@@ -318,7 +318,7 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 28px;
 }
 
 .footer {
