@@ -488,7 +488,7 @@ ul.social__icons li a img{
     padding-bottom: .3em;
     text-decoration: none;}
 
-#formulario input[type=text], [type=email], textarea {
+input[type=text], [type=email], textarea {
     color: rgb(0, 0, 0);
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -504,7 +504,7 @@ ul.social__icons li a img{
     border: 0;
 }
 
-#formulario input[type=submit], input[type=reset] {
+input[type=submit], input[type=reset] {
     background: #222;
     color: #fff;
     font-family: montserrat,sans-serif;
@@ -664,6 +664,13 @@ picture span {
 
 #formulario textarea:focus {
     background-color: #e8f0fe;
+    transition: all 2s;
+}
+
+input[type=reset]:hover, input[type=submit]:hover  {
+background: #ffffff;
+color: #222;
+transition: all 1s;
 }
 
 @media only screen and (max-width: 1024px) {
