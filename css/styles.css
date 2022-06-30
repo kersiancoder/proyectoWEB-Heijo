@@ -69,16 +69,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* .inicio {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    text-align: center;
-    background-image: url(../images/pattern.png);
-} */
-
 .inicio a:visited {
     color: white;
     text-decoration: underline;
@@ -662,7 +652,7 @@ picture span {
     opacity: 1;
 }
 
-#formulario input:focus {
+#formulario input:focus{
     background-color: #e8f0fe;
     transition: all 2s;
 }
