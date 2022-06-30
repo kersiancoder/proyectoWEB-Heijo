@@ -676,6 +676,7 @@ picture span {
     opacity: 1;
 }
 
+
 @media only screen and (max-width: 1024px) {
     #menu_desktop {
         display: none;

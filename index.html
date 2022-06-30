@@ -25,23 +25,22 @@
     </script>
     <script>
         function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+            var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
+            for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
 window.addEventListener("scroll", reveal);
     </script>
+
 </head>
 
 <body>
@@ -142,9 +141,9 @@ window.addEventListener("scroll", reveal);
                     <span class="titulo__borde"></span>
                     <p>Creemos que los sitios web no solo deben ser llamativos. Cada negocio es único, con su propia historia, trayectoria y visión</p>
                 </div>
-                <div class="contenedor reveal">
+                <div class="contenedor">
                     <article class="contenedor__servicios">
-                            <div class="contenedor__servicios__izquierda one__half">
+                            <div class="contenedor__servicios__izquierda one__half reveal--servicioDerecha">
                                 <ul type="none">
                                     <li class="service__item service__item--text-right">
                                         <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
@@ -163,7 +162,7 @@ window.addEventListener("scroll", reveal);
                                     </li>
                                 </ul>
                             </div>
-                            <div class="contenedor__servicios__derecha one__half">
+                            <div class="contenedor__servicios__derecha one__half reveal--servicioIzquierda">
                                 <ul type="none">
                                     <li class="service__item service__item--text-left">
                                         <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse service-icon"></i></span>
