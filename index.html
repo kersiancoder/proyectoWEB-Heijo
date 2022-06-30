@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8724dc6190.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8724dc6190.js" crossorigin="anonymous">
+    </script>
     <script>
         function toggleMenu() {
         document.getElementById("hamburger__menu").classList.toggle("show__menu");
@@ -27,19 +28,25 @@
     <main>
         <section class="inicio" id="home">
             <h1 class="inicio__link">WEB DESIGN</h1>
-            <p class="padding--bottom">Branding<span class="bullet">•</span>Design<span class="bullet">•</span>Responsive<span class="bullet">•</span>SEO <span class="bullet">•</span>E‑Commerce<span class="bullet">•</span>CMS<span class="bullet">•</span>RRSS <span class="bullet">•</span>Cloud&nbsp;Hosting</p>
-            <a href="#nosotros" class="button borde--blanco">Conocenos</a>
+            <p class="vinetas">Branding<span class="bullet">•</span>Design<span class="bullet">•</span>Responsive<span class="bullet">•</span>SEO <span class="bullet">•</span>E‑Commerce<span class="bullet">•</span>CMS<span class="bullet">•</span>RRSS <span class="bullet">•</span>Cloud&nbsp;Hosting</p>
+            <div class="button"><a href="#nosotros" class="button borde--blanco">Conocenos</a></div>
         </section>
     
         <div class="navegacion__nav" id="menu_desktop">
             <nav>
-                <a href="#home"><span class="navegacion__nav__menu">Home</span></a>
-                <a href="#nosotros"><span class="navegacion__nav__menu">Nosotros</span></a>
-                <a href="#servicios"><span class="navegacion__nav__menu">Servicios</span></a>
-                <a href="#home"><img src="./images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo"></a>
-                <a href="#clientes"><span class="navegacion__nav__menu nav__menu__derecha">Clientes</span></a>
-                <a href="#portfolio"><span class="navegacion__nav__menu">Portfolio</span></a>
-                <a href="#contacto"><span class="navegacion__nav__menu navegacion__nav__menu--ultimo">Contacto</span></a>
+                <div class="navegacion__izquierda">
+                    <a href="#home"><span class="navegacion__nav__menu navegacion__nav--primero">Home</span></a>
+                    <a href="#nosotros"><span class="navegacion__nav__menu navegacion__nav--izquierda">Nosotros</span></a>
+                    <a href="#servicios"><span class="navegacion__nav__menu navegacion__nav--izquierda">Servicios</span></a>
+                </div>
+                <div class="div__logo">
+                    <a href="#home"><img src="./images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo"></a>
+                </div>
+                <div class="navegacion__derecha">
+                    <a href="#clientes"><span class="navegacion__nav__menu nav__menu navegacion__nav--derecha">Clientes</span></a>
+                    <a href="#portfolio"><span class="navegacion__nav__menu navegacion__nav--derecha">Portfolio</span></a>
+                    <a href="#contacto"><span class="navegacion__nav__menu navegacion__nav--ultimo">Contacto</span></a>
+                </div>
             </nav>
         </div>
 

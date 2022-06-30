@@ -4,6 +4,19 @@
     box-sizing: 0;
 }
 
+#home {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " titulo"
+        " vinetas"
+        " button"
+        ;
+    grid-template-rows: 1fr auto 1fr;
+    row-gap: 20px;
+    background-image: url(../images/pattern.png);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -56,7 +69,7 @@ a:hover {
     text-decoration: none;
 }
 
-.inicio {
+/* .inicio {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -64,7 +77,7 @@ a:hover {
     flex-flow: column wrap;
     text-align: center;
     background-image: url(../images/pattern.png);
-}
+} */
 
 .inicio a:visited {
     color: white;
@@ -81,6 +94,19 @@ a:hover {
     color: white;
     font-size: 4rem;
     font-family: 'Oswald', sans-serif;
+    grid-area: titulo;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.vinetas {
+grid-area: vinetas;
+margin-bottom: 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
 }
 
 .navegacion__nav{
@@ -97,14 +123,25 @@ a:hover {
 
 .navegacion__nav__menu {
     font-weight: bold;
-    margin-right: 4rem;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
 }
 
-.nav__menu__derecha{
-    margin-left: 9.625rem;
+.navegacion__nav--primero {
+    margin-left: 26px;
+}
+
+.navegacion__nav--izquierda {
+    padding-left: 50px;
+}
+
+.navegacion__nav--derecha {
+    padding-right: 50px;
+}
+
+.navegacion__nav nav {
+    display: inherit;
 }
 
 .navegacion__nav__menu--ultimo {
@@ -234,6 +271,7 @@ a:hover {
 .fa-stack {
     font-size: 2em;
     color: #999;
+    transition: all 1s;
 }
 
 .fa-stack:hover {
@@ -287,6 +325,7 @@ a:hover {
 	transition: .3s ease-in-out;
     width: 150px;
     height: 150px;
+    transition: all 1s;
 }
 .clientes picture:hover img {
 	filter: grayscale(0);
@@ -402,6 +441,7 @@ ul.social__icons li a img{
 
 .img__facebook {
     opacity: .6;
+    transition: all 1s;
 }
 
 .img__facebook:hover {
@@ -410,6 +450,7 @@ ul.social__icons li a img{
 
 .img__instagram {
     opacity: .6;
+    transition: all 1s;
 }
 
 .img__instagram:hover {
@@ -481,6 +522,15 @@ ul.social__icons li a img{
     width: 90px;
     height: 90px;
     position: absolute;
+    z-index: 9999;
+    
+}
+
+.div__logo {
+    display: flex;
+    width: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #logo__mobile {
@@ -550,17 +600,19 @@ ul.social__icons li a img{
     border: 2px solid #fff;
     color: #fff;
 }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 a.button {
     border-radius: 3px;
     font-family: montserrat,sans-serif;
     letter-spacing: 0;
     text-transform: uppercase;
-    display: inline-block;
     padding: 10px 15px;
-}
-
-.padding--bottom {
-    margin-bottom: 1rem;
 }
 
 .clientes__img {
@@ -590,6 +642,15 @@ picture span {
 
 .gallery:hover .gallery__text {
     opacity: 1;
+}
+
+#formulario input:focus {
+    background-color: #e8f0fe;
+    transition: all 2s;
+}
+
+#formulario textarea:focus {
+    background-color: #e8f0fe;
 }
 
 @media only screen and (max-width: 1024px) {
