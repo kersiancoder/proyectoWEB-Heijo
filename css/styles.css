@@ -423,7 +423,7 @@ ul.social__icons li a img{
     cursor: pointer;
 }
 
-.menu__top__inside {
+#menu__top__inside {
     background-image: url(../images/top_bg.png);
     background-size: 18px 11px;
     background-position: 0 0;
@@ -433,6 +433,15 @@ ul.social__icons li a img{
     top: 14px;
     transition: background-position .3s linear 0s;
     width: 18px;
+}
+
+#menu__top__inside:hover{
+    animation:bottom_top_over .3s linear infinite
+}
+
+@keyframes bottom_top_over{
+    0%{background-position:0 0}
+    100%{background-position:0 -10px}
 }
 
 .black {
