@@ -373,8 +373,8 @@ align-items: flex-start;
 }
 
 .footer__contenedor {
-    background-color: #cbcbcb;
-    box-shadow: 0 -1px 5px rgb(0 0 0 / 15%);
+    background-color: #e8e8ff;
+    box-shadow: rgb(173 173 173) 0px 10px 100px;
     z-index: 100;
     padding: 40px 0 40px 0;
     min-height: 40px;
@@ -549,12 +549,22 @@ ul.social__icons li a img{
     z-index: 10;
 }
 
-.color__oscuro {
+/* .color__oscuro {
     background-color: #e6e6e6;
 }
 
 .color__claro {
     background-color: aliceblue;
+} */
+
+.color__oscuro {
+    background: rgb(236,236,236);
+background: linear-gradient(180deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+}
+
+.color__claro {
+    background: rgb(236,236,236);
+background: linear-gradient(360deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
 }
 
 .bullet {
