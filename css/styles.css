@@ -436,10 +436,10 @@ ul.social__icons li a img{
 }
 
 #menu__top__inside:hover{
-    animation:bottom_top_over .3s linear infinite
+    animation:subeflecha .3s linear infinite
 }
 
-@keyframes bottom_top_over{
+@keyframes subeflecha{
     0%{background-position:0 0}
     100%{background-position:0 -10px}
 }
