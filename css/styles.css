@@ -622,6 +622,7 @@ a.button {
     letter-spacing: 0;
     text-transform: uppercase;
     padding: 10px 15px;
+    transition: all 1s;
 }
 
 .clientes__img {
@@ -661,6 +662,18 @@ picture span {
 
 #formulario textarea:focus {
     background-color: #e8f0fe;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1024px) {
