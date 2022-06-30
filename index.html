@@ -23,25 +23,7 @@
         document.getElementById("hamburger__menu").classList.remove("show__menu");
         }
     </script>
-    <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
-window.addEventListener("scroll", reveal);
-    </script>
-
-</head>
+    </head>
 
 <body>
     <main>
@@ -88,13 +70,13 @@ window.addEventListener("scroll", reveal);
         </div>
 
         <section class="color__oscuro" id="nosotros" onclick="hideMenu()">
-            <div class="reveal">
+            <div>
                 <div class="titulo">
                     <h1>¿QUIÉNES SOMOS?</h1>
                     <span class="titulo__borde"></span>
                     <p>Somos un equipo de jóvenes creativos, diseñadores y desarrolladores comprometidos y apasionados por lo que hacemos. Aportamos creatividad, tecnología, marketing y ejecución profesional.</p>
                 </div>
-                <div class="contenedor reveal">
+                <div class="contenedor">
                     <article class="equipo">
                         <ul>
                             <li class="equipo__ambos"><img class="equipo__image" src="./images/carla.jpg" alt="Carla Zarrillo" width="300px">
@@ -135,7 +117,7 @@ window.addEventListener("scroll", reveal);
 
 
         <section class="color__claro" id="servicios" onclick="hideMenu()">
-            <div class="reveal">
+            <div>
                 <div class="titulo">
                     <h1>SERVICIOS</h1>
                     <span class="titulo__borde"></span>
@@ -143,7 +125,7 @@ window.addEventListener("scroll", reveal);
                 </div>
                 <div class="contenedor">
                     <article class="contenedor__servicios">
-                            <div class="contenedor__servicios__izquierda one__half reveal--servicioDerecha">
+                            <div class="contenedor__servicios__izquierda one__half>
                                 <ul type="none">
                                     <li class="service__item service__item--text-right">
                                         <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
@@ -162,7 +144,7 @@ window.addEventListener("scroll", reveal);
                                     </li>
                                 </ul>
                             </div>
-                            <div class="contenedor__servicios__derecha one__half reveal--servicioIzquierda">
+                            <div class="contenedor__servicios__derecha one__half>
                                 <ul type="none">
                                     <li class="service__item service__item--text-left">
                                         <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse service-icon"></i></span>
@@ -187,13 +169,13 @@ window.addEventListener("scroll", reveal);
         </section>
 
         <section class="color__oscuro" id="clientes" onclick="hideMenu()">
-            <div class="reveal">
+            <div>
                 <div class="titulo">
                 <h1>CLIENTES</h1>
                 <span class="titulo__borde"></span>
                 <p>Trabajamos con grandes marcas. Ellos depositaron su confianza  y potenciaron sus proyectos al máximo.</p>
                 </div>
-                <div class="contenedor reveal">
+                <div class="contenedor">
                     <article class="clientes">
                         <picture class="gallery">
                             <a target="_blank" href="https://google.com.uy/1">
@@ -241,7 +223,7 @@ window.addEventListener("scroll", reveal);
         </section>
 
         <section class="color__claro" id="portfolio" onclick="hideMenu()">
-            <div class="reveal">
+            <div>
                 <div class="titulo">
                 <h1>PORTFOLIO</h1>
                 <span class="titulo__borde"></span>
@@ -293,13 +275,13 @@ window.addEventListener("scroll", reveal);
         </section>
 
         <section class="color__oscuro" id="contacto" onclick="hideMenu()">
-            <div class="reveal">
+            <div>
                 <div class="titulo">
                 <h1>CONTACTO</h1>
                 <span class="titulo__borde"></span>
                 <p>Ingresá tus datos y nos contactaremos contigo a la brevedad posible.</p>
                 </div>
-                <div class="contenedor reveal">
+                <div class="contenedor">
                     <article>
                         <div id="formulario">
                             <form action="">
