@@ -152,12 +152,9 @@ padding: 0 20px;
 .titulo {
     text-align: center;
     padding-top: 4rem;
-    /* margin: 0px 10px 0px 10px; */
+    margin: 0px 10px 0px 10px;
 }
 
-.titulo p {
-    /* padding: 0 20px; */
-}
 
 .titulo__borde {
     background: none repeat scroll 0 0 #999;
@@ -171,7 +168,7 @@ padding: 0 20px;
 .contenedor {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 6rem 1.5rem;
+    padding: 3rem 1.5rem;
 }
 
 .equipo {
