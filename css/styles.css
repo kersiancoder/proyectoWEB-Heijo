@@ -739,6 +739,10 @@ transition: all 1s;
     background: #222222; 
 }
 
+theme-color {
+    content: #222222;
+}
+
 @media only screen and (min-width: 1025px) {
     #menu_mobile {
         display: none;
