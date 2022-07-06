@@ -722,6 +722,23 @@ transition: all 1s;
     }
 }
 
+::-webkit-scrollbar {
+    width:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:rgb(255, 255, 255);
+    box-shadow:inset 0 0 6px rgba(0,0,0,.3)
+}
+
+::-webkit-scrollbar-thumb {
+    background:#999999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #222222; 
+}
+
 @media only screen and (min-width: 1025px) {
     #menu_mobile {
         display: none;
