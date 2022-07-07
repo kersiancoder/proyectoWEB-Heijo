@@ -8,8 +8,7 @@
     <meta name="theme-color" content="#222222">
     <title>Home - Web Design</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -49,26 +48,26 @@
             <nav>
                 <a href="#home"><img src="./images/logo.jpg" alt="" class="navegacion__nav__logo" id="logo__mobile" onclick="hideMenu()"></a>
                 <li class="hamburger"><i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-                
-                <div id="hamburger__menu" class="dropdown__content">
-                    <ul >
-                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#home">Inicio</a></li>
-                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#nosotros">Nosotros</a></li>
-                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#servicios">Servicios</a></li>
-                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#clientes">Clientes</a></li>
-                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>                    
-                        <li class="dropdown__menu dropdown__menu--ultimo" onclick="hideMenu()"><a href="#contacto">Contacto</a></li>  
+                    <div id="hamburger__menu" class="dropdown__content">
+                        <ul >
+                            <li class="dropdown__menu" onclick="hideMenu()"><a href="#home">Inicio</a></li>
+                            <li class="dropdown__menu" onclick="hideMenu()"><a href="#nosotros">Nosotros</a></li>
+                            <li class="dropdown__menu" onclick="hideMenu()"><a href="#servicios">Servicios</a></li>
+                            <li class="dropdown__menu" onclick="hideMenu()"><a href="#clientes">Clientes</a></li>
+                            <li class="dropdown__menu" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>                    
+                            <li class="dropdown__menu dropdown__menu--ultimo" onclick="hideMenu()"><a href="#contacto">Contacto</a></li>  
+                        </ul>
                     </div>                  
-                </ul>
+                </li>
             </nav>
         </div>
 
         <section class="color__oscuro" id="nosotros" onclick="hideMenu()">
             <div>
                 <div class="titulo">
-                    <h1>¿QUIÉNES SOMOS?</h1>
+                    <h2>¿QUIÉNES SOMOS?</h2>
                     <span class="titulo__borde"></span>
-                    <p>Somos un equipo de jóvenes creativos, diseñadores y desarrolladores comprometidos y apasionados por lo que hacemos. Aportamos creatividad, tecnología, marketing y ejecución profesional.</p>
+                    <p class="subtitulo">Somos un equipo de jóvenes creativos, diseñadores y desarrolladores comprometidos y apasionados por lo que hacemos. Aportamos creatividad, tecnología, marketing y ejecución profesional.</p>
                 </div>
                 <div class="contenedor">
                     <article class="equipo">
@@ -77,13 +76,13 @@
                                 <div class="equipo__redes">
                                     <div class="equipo__redes__hidden">
                                         <a target="_blank" href="https://www.instagram.com/profile1"><img alt="" src="./images/instagram.png"></a>
-                                        <h5>Carla Zarrillo</h5>
+                                        <h3>Carla Zarrillo</h3>
                                         <p class="black">CEO Founder</p>
                                     </div>
                                 </div>
                                 <p>
                                     <span>
-                                        <h5 class="equipo__redes__texto">Carla Zarrillo</h5>
+                                        <h3 class="equipo__redes__texto">Carla Zarrillo</h3>
                                         <p class="equipo__redes__texto--p">CEO Founder</p>
                                     </span>
                                 </p>
@@ -92,13 +91,13 @@
                                 <div class="equipo__redes">
                                     <div class="equipo__redes__hidden">
                                         <a target="_blank" href="https://www.instagram.com/profile2"><img alt="" src="./images/instagram.png"></a>
-                                        <h5>Maximiliano Heijo</h5>
+                                        <h3>Maximiliano Heijo</h3>
                                         <p class="black">CEO Founder</p>
                                     </div>
                                 </div>
                                 <p>
                                     <span>
-                                        <h5 class="equipo__redes__texto">Maximiliano Heijo</h5>
+                                        <h3 class="equipo__redes__texto">Maximiliano Heijo</h3>
                                         <p class="equipo__redes__texto--p">CEO Founder</p>
                                     </span>
                                 </p>
@@ -113,9 +112,9 @@
         <section class="color__claro" id="servicios" onclick="hideMenu()">
             <div>
                 <div class="titulo">
-                    <h1>SERVICIOS</h1>
+                    <h2>SERVICIOS</h2>
                     <span class="titulo__borde"></span>
-                    <p>Creemos que los sitios web no solo deben ser llamativos. Cada negocio es único, con su propia historia, trayectoria y visión</p>
+                    <p class="subtitulo">Creemos que los sitios web no solo deben ser llamativos. Cada negocio es único, con su propia historia, trayectoria y visión</p>
                 </div>
                 <div class="contenedor">
                     <article class="contenedor__servicios">
@@ -123,17 +122,17 @@
                                 <ul type="none">
                                     <li class="service__item service__item--text-right">
                                         <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
-                                        <h5>Identidad y marca</h5>
+                                        <h3>Identidad y marca</h3>
                                         <p>El mensaje es el marco, como lo hacemos llegar es la respuesta al problema.</p>
                                     </li>
                                     <li class="service__item service__item--text-right">
                                         <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-wrench fa-stack-1x fa-inverse service-icon"></i></span>
-                                        <h5>Diseño Web</h5>
+                                        <h3>Diseño Web</h3>
                                         <p>Trabajamos el desarrollo de tu marca en todos sus ámbitos. Identidad corporativa y creación de marcas.</p>
                                     </li>
                                     <li class="service__item service__item--text-right">
                                         <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cloud fa-stack-1x fa-inverse service-icon"></i></span>
-                                        <h5>Cloud Hosting</h5>
+                                        <h3>Cloud Hosting</h3>
                                         <p>Es una reciente y novedosa tipología de hosting o alojamiento basado en tecnología Cloud o “Nube".</p>
                                     </li>
                                 </ul>
@@ -142,17 +141,17 @@
                                 <ul type="none">
                                     <li class="service__item service__item--text-left">
                                         <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user fa-stack-1x fa-inverse service-icon"></i></span>
-                                        <h5>Experiencia del usuario</h5>
+                                        <h3>Experiencia del usuario</h3>
                                         <p>Desarrollamos tu sitio con diseño centrado en el usuario para generar la mejor experiencia para tus clientes.</p>
                                     </li>
                                     <li class="service__item service__item--text-left">
                                         <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-check fa-stack-1x fa-inverse service-icon"></i></span>
-                                        <h5>Posicionamiento SEO</h5>
-                                        <p>El posicionamiento en buscadores u optimización de motores de búsqueda es el proceso de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.</p>
+                                        <h3>Posicionamiento SEO</h3>
+                                        <p>El posicionamiento en buscadores u optimización de motores de búsqueda es el proceso de mejorar la visibilidad de un sitio web en los resultados de los diferentes buscadores.</p>
                                     </li>
                                     <li class="service__item service__item--text-left">
                                         <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-laptop fa-stack-1x fa-inverse service-icon"></i></span>
-                                        <h5>Sitios CMS</h5>
+                                        <h3>Sitios CMS</h3>
                                         <p>Un CMS es un software desarrollado para que cualquier usuario pueda administrar y gestionar contenidos de una web con facilidad y sin conocimientos de programación Web.</p>
                                     </li>
                                 </ul>
@@ -165,9 +164,9 @@
         <section class="color__oscuro" id="clientes" onclick="hideMenu()">
             <div>
                 <div class="titulo">
-                <h1>CLIENTES</h1>
+                <h2>CLIENTES</h2>
                 <span class="titulo__borde"></span>
-                <p>Trabajamos con grandes marcas. Ellos depositaron su confianza  y potenciaron sus proyectos al máximo.</p>
+                <p class="subtitulo">Trabajamos con grandes marcas. Ellos depositaron su confianza  y potenciaron sus proyectos al máximo.</p>
                 </div>
                 <div class="contenedor">
                     <article class="clientes">
@@ -219,9 +218,9 @@
         <section class="color__claro" id="portfolio" onclick="hideMenu()">
             <div>
                 <div class="titulo">
-                <h1>PORTFOLIO</h1>
+                <h2>PORTFOLIO</h2>
                 <span class="titulo__borde"></span>
-                <p>Ayudamos a construir productos desde la idea hasta el lanzamiento. Aquí hay algunos de nuestros trabajos.</p>
+                <p class="subtitulo">Ayudamos a construir productos desde la idea hasta el lanzamiento. Aquí hay algunos de nuestros trabajos.</p>
                 </div>
                 <div class="contenedor">
                     <article class="portfolio__titulo">
@@ -271,9 +270,9 @@
         <section class="color__oscuro" id="contacto" onclick="hideMenu()">
             <div>
                 <div class="titulo">
-                <h1>CONTACTO</h1>
+                <h2>CONTACTO</h2>
                 <span class="titulo__borde"></span>
-                <p>Ingresá tus datos y nos contactaremos contigo a la brevedad posible.</p>
+                <p class="subtitulo">Ingresá tus datos y nos contactaremos contigo a la brevedad posible.</p>
                 </div>
                 <div class="contenedor">
                     <article>
