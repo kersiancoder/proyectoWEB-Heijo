@@ -62,7 +62,6 @@ input {
             }
     }
 }
-
 textarea {
     font-family: $font-principal;
     font-size: $text-h3;
@@ -78,16 +77,15 @@ textarea {
     margin-bottom: 20px;
     border: 0;
 }
-
-.formulario__botones {
-    display: flex;
-    justify-content: space-around;
+.formulario {
+    &__botones {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__boton {
+        margin-right: $spacing-extra;
+    }
 }
-
-.formulario__boton {
-    margin-right: $spacing-extra;
-}
-
 #formulario {
     input:focus{
         background-color: #e8f0fe;

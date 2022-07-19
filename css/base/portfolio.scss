@@ -4,6 +4,16 @@
         justify-content: space-around;
         align-items: flex-end;
     }
+    &__text {
+        color: $color-secundario;
+        font-size: $text-h2;
+        padding-bottom: $spacing-normal;
+        font-weight: 900;
+        z-index: 1;
+        text-transform: uppercase;
+        opacity: 0.6;
+        transition: all 1s;
+    }
     &__portfolio {
         width: 100%;
         transition: all 1s;
@@ -17,7 +27,6 @@
         opacity: 1;
     }
 }
-
 .portfolio {
     display: flex;
     flex-flow: row wrap;
@@ -35,15 +44,4 @@
             text-decoration: underline;
         }
     }
-}
-
-.gallery__text {
-    color: $color-secundario;
-    font-size: $text-h2;
-    padding-bottom: $spacing-normal;
-    font-weight: 900;
-    z-index: 1;
-    text-transform: uppercase;
-    opacity: 0.6;
-    transition: all 1s;
 }

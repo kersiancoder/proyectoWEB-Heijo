@@ -16,7 +16,6 @@
         min-height: $spacing-extra;
     }
 }
-
 ul.social__icons {
     text-align: center;
     float: left;
@@ -30,7 +29,6 @@ ul.social__icons {
         }
     }
 }
-
 .menu__top {
     background-color: $color-principal;
     height: 50px;
@@ -41,12 +39,10 @@ ul.social__icons {
     margin-top: -65px;
     position: absolute;
 }
-
 @keyframes subeflecha{
     0%{background-position:0 0}
     100%{background-position:0 -10px}
 }
-
 #menu__top__inside {
     background-image: url(../../images/top_bg.png);
     background-size: 18px 11px;
@@ -61,7 +57,6 @@ ul.social__icons {
         animation:subeflecha .3s linear infinite
     }
 }
-
 .img__facebook {
     opacity: .6;
     transition: all 1s;
@@ -69,7 +64,6 @@ ul.social__icons {
         opacity: 1;
     }
 }
-
 .img__instagram {
     opacity: .6;
     transition: all 1s;

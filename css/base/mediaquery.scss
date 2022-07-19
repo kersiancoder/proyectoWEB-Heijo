@@ -1,13 +1,10 @@
 @media only screen and (max-width: 1024px) {
-
     #menu_desktop {
         display: none;
     }
-
     .navegacion__nav {
         height: 60px;
     }
-
     .one__half {
         width: 100%;
         margin-left: 0%;
@@ -16,7 +13,6 @@
     .fa-right {
         float: left;
     }
-
     .service__item {
         &--text-right {
             text-align: left;
@@ -33,25 +29,21 @@
             padding-left: 0px;
         }
     }
-
     .contenedor__servicios {
         padding: 0;
         &__izquierda {
             margin-bottom: 0px;
         }
     }
-
     .fa-stack {
         height: 0;
     }
 }
 
 @media only screen and (min-width: 1025px) {
-
     #menu_mobile {
         display: none;
     }
-
     .navegacion__nav {
         line-height: $spacing-extra;
     }

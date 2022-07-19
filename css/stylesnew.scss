@@ -20,16 +20,13 @@
 @import "base/contacto";
 /* Footer */
 @import "base/footer";
-
 /* Base */
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: $font-principal;
 }
-
 h1 {
     font-size: $text-h1;
     color: $color-secundario;
@@ -42,7 +39,6 @@ h1 {
     justify-content: center;
     text-align: center;
 }
-
 h2 {
     font-size: $text-h2;
     color: $color-principal;
@@ -51,23 +47,19 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
-
 h3 {
     font-size: $text-h3;
     color: $color-principal;
     text-transform: uppercase;
 }
-
 p {
     font-family: $font-p;
     font-size: $text-p;
     color: $color-alternativo;
 }
-
 li {
     list-style: none;
 }
-
 a {
     color: $color-alternativo;
     text-decoration: none;
@@ -75,45 +67,39 @@ a {
         color: $color-principal;
     }
 }
-
 .titulo {
     padding: $spacing-extra $spacing-large 0;
     text-align: center;
+    &__borde {
+        background: none repeat scroll 0 0 $color-alternativo;
+        height: $spacing-small;
+        width: $spacing-full;
+        margin-bottom: $margin-large;
+        display: block;
+        margin: 0 auto;
+    }
 }
-
-.titulo__borde {
-    background: none repeat scroll 0 0 $color-alternativo;
-    height: $spacing-small;
-    width: $spacing-full;
-    margin-bottom: $margin-large;
-    display: block;
-    margin: 0 auto;
-}
-
 .subtitulo {
     margin: $margin-normal 0;
     font-size: $text-h3;
 }
-
 .p-0 {
     padding-top: $spacing-none;
 }
-
 .contenedor {
     padding: $margin-large $margin-normal;
     max-width: 1180px;
     margin: 0 auto;
 }
-
-.color__oscuro {
-    background: rgb(236,236,236);
-    background: linear-gradient(179deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+.color {
+    &__oscuro {
+        background: rgb(236,236,236);
+        background: linear-gradient(179deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+    }
+    &__claro {
+        background: rgb(236,236,236);
+        background: linear-gradient(359deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+    }
 }
-
-.color__claro {
-    background: rgb(236,236,236);
-    background: linear-gradient(359deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
-}
-
 // Media Querys
 @import "base/mediaquery"

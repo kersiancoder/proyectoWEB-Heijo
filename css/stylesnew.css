@@ -11,16 +11,13 @@
 ::-webkit-scrollbar {
   width: 20px;
 }
-
 ::-webkit-scrollbar-track {
   background: #ffffff;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
-
 ::-webkit-scrollbar-thumb {
   background: #a9a9a9;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #222;
 }
@@ -85,25 +82,20 @@ a.button:hover {
   top: 0;
   z-index: 9999;
 }
-
 .navegacion__nav__menu {
   font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .navegacion__nav--primero {
   margin-left: 25px;
 }
-
 .navegacion__nav--izquierda {
   padding-left: 50px;
 }
-
 .navegacion__nav--derecha {
   padding-right: 50px;
 }
-
 .navegacion__nav nav {
   display: inherit;
 }
@@ -113,18 +105,17 @@ a.button:hover {
   height: 90px;
   position: absolute;
 }
-
-.div__logo {
-  width: 90px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 #logo__mobile {
   width: 75px;
   height: 75px;
   position: relative;
   z-index: 10;
+}
+
+.div__logo {
+  width: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .hamburger {
@@ -136,16 +127,6 @@ a.button:hover {
 .dropdown__content {
   display: none;
 }
-
-.show__menu {
-  font-size: 1.2em;
-  display: block;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 240px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
 .dropdown__menu {
   font-size: 1.2em;
   border-color: #a9a9a9;
@@ -161,6 +142,15 @@ a.button:hover {
   color: #222;
 }
 
+.show__menu {
+  font-size: 1.2em;
+  display: block;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* Nosotros */
 .equipo {
   text-align: center;
@@ -170,7 +160,6 @@ a.button:hover {
   display: inline-block;
   position: relative;
 }
-
 .equipo__ambos:hover .equipo__image {
   opacity: 0.1;
 }
@@ -183,7 +172,6 @@ a.button:hover {
 .equipo__ambos:hover .equipo__redes {
   opacity: 1;
 }
-
 .equipo__image {
   opacity: 1;
   display: block;
@@ -191,7 +179,6 @@ a.button:hover {
   height: auto;
   transition: 0.6s ease;
 }
-
 .equipo__redes {
   opacity: 0;
   position: absolute;
@@ -201,13 +188,11 @@ a.button:hover {
   width: 100%;
   height: 100%;
 }
-
 .equipo__redes__hidden {
   color: #222;
   position: relative;
   top: 30%;
 }
-
 .equipo__redes__texto {
   color: #222;
   text-transform: uppercase;
@@ -242,33 +227,11 @@ a.button:hover {
 .fa-stack:hover {
   color: #222;
 }
-
 .fa-right {
   float: right;
 }
-
 .fa-left {
   float: left;
-}
-
-.service__item--text-right {
-  text-align: right;
-}
-.service__item--text-right p {
-  padding-right: 100px;
-}
-.service__item--text-right .fa-stack {
-  margin-left: 20px;
-}
-
-.service__item--text-left {
-  text-align: left;
-}
-.service__item--text-left p {
-  padding-left: 100px;
-}
-.service__item--text-left .fa-stack {
-  margin-right: 20px;
 }
 
 .service__item {
@@ -278,6 +241,24 @@ a.button:hover {
 }
 .service__item h3 {
   margin: 10px 0;
+}
+.service__item--text-left {
+  text-align: left;
+}
+.service__item p {
+  padding-left: 100px;
+}
+.service__item .fa-stack {
+  margin-right: 20px;
+}
+.service__item--text-right {
+  text-align: right;
+}
+.service__item p {
+  padding-right: 100px;
+}
+.service__item .fa-stack {
+  margin-left: 20px;
 }
 
 /* Clientes */
@@ -317,6 +298,16 @@ picture span {
   justify-content: space-around;
   align-items: flex-end;
 }
+.gallery__text {
+  color: #ffffff;
+  font-size: 2.4em;
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  z-index: 1;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: all 1s;
+}
 .gallery__portfolio {
   width: 100%;
   transition: all 1s;
@@ -347,17 +338,6 @@ picture span {
 .portfolio__filter--activo {
   font-weight: bold;
   text-decoration: underline;
-}
-
-.gallery__text {
-  color: #ffffff;
-  font-size: 2.4em;
-  padding-bottom: 0.5rem;
-  font-weight: 900;
-  z-index: 1;
-  text-transform: uppercase;
-  opacity: 0.6;
-  transition: all 1s;
 }
 
 /* Contacto */
@@ -444,7 +424,6 @@ textarea {
   display: flex;
   justify-content: space-around;
 }
-
 .formulario__boton {
   margin-right: 3rem;
 }
@@ -611,7 +590,6 @@ a :hover {
   padding: 3rem 1rem 0;
   text-align: center;
 }
-
 .titulo__borde {
   background: none repeat scroll 0 0 #a9a9a9;
   height: 0.2rem;
@@ -640,7 +618,6 @@ a :hover {
   background: rgb(236, 236, 236);
   background: linear-gradient(179deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);
 }
-
 .color__claro {
   background: rgb(236, 236, 236);
   background: linear-gradient(359deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);

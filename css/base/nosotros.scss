@@ -5,53 +5,46 @@
         display: inline-block;
         position: relative;
     }
-}
-
-.equipo__ambos:hover {
-    .equipo__image {
-        opacity: 0.1;
+    &__ambos:hover {
+        .equipo__image {
+            opacity: 0.1;
+        }
+        .equipo__redes__texto {
+            opacity: 0;
+        }
+        .equipo__redes__texto--p {
+            opacity: 0;
+        }
+        .equipo__redes {
+            opacity: 1;
+        }
     }
-    .equipo__redes__texto {
-        opacity: 0;
-    }
-    .equipo__redes__texto--p {
-        opacity: 0;
-    }
-    .equipo__redes {
+    &__image {
         opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .6s ease;
     }
-    
+    &__redes {
+        opacity: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        &__hidden {
+            color: $color-principal;
+            position: relative;
+            top: 30%;
+        }
+        &__texto {
+            color: $color-principal;
+            text-transform: uppercase;
+        }
+    }
 }
-
-.equipo__image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .6s ease;
-}
-
-.equipo__redes {
-    opacity: 0;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.equipo__redes__hidden {
-    color: $color-principal;
-    position: relative;
-    top: 30%;
-}
-
-.equipo__redes__texto {
-    color: $color-principal;
-    text-transform: uppercase;
-}
-
 #nosotros {
     padding-top: $margin-large;
 }
