@@ -626,6 +626,10 @@ a :hover {
   font-size: 1.2em;
 }
 
+.p-0 {
+  padding-top: 0;
+}
+
 .contenedor {
   padding: 3rem 1.5rem;
   max-width: 1180px;

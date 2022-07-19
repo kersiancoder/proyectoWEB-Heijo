@@ -95,6 +95,10 @@ a {
     font-size: $text-h3;
 }
 
+.p-0 {
+    padding-top: $spacing-none;
+}
+
 .contenedor {
     padding: $margin-large $margin-normal;
     max-width: 1180px;
