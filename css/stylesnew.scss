@@ -1,11 +1,5 @@
-*::after,
-*::before,
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
+/* Reset */
+@import "base/utils/reset";
 // Vars
 @import "base/utils/_vars";
 /* Scrollbar */
