@@ -135,51 +135,5 @@ a {
     background: $color-principal; 
 }
 
-@media only screen and (max-width: 1024px) {
-    #menu_desktop {
-        display: none;
-    }
-    .navegacion__nav {
-        height: 60px;
-    }
-    .one__half {
-        width: 100%;
-        margin-left: 0%;
-    }
-    .fa-right {
-        float: left;
-    }
-    .service__item--text-right .fa-stack {
-        margin-right: 20px;
-        margin-left: 0px;
-    }
-    .service__item--text-right {
-        text-align: left;
-    }
-    .service__item--text-right p {
-        padding-right: 0px;
-        padding-left: 100px;
-    }
-    .contenedor__servicios__izquierda {
-        margin-bottom: 0px;
-    }
-
-    .service__item--text-left {
-        padding-left: 0px;
-    }
-    .contenedor__servicios {
-        padding: 0;
-    }
-    .fa-stack {
-        height: 0;
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    #menu_mobile {
-        display: none;
-    }
-    .navegacion__nav {
-        line-height: $spacing-extra;
-    }
-}
+// Media Querys
+@import "base/mediaquery"

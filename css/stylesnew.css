@@ -645,25 +645,25 @@ a :hover {
   .fa-right {
     float: left;
   }
-  .service__item--text-right .fa-stack {
-    margin-right: 20px;
-    margin-left: 0px;
-  }
   .service__item--text-right {
     text-align: left;
   }
-  .service__item--text-right p {
+  .service__item .fa-stack {
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  .service__item p {
     padding-right: 0px;
     padding-left: 100px;
-  }
-  .contenedor__servicios__izquierda {
-    margin-bottom: 0px;
   }
   .service__item--text-left {
     padding-left: 0px;
   }
   .contenedor__servicios {
     padding: 0;
+  }
+  .contenedor__servicios__izquierda {
+    margin-bottom: 0px;
   }
   .fa-stack {
     height: 0;
