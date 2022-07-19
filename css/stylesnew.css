@@ -6,6 +6,25 @@
   box-sizing: 0;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+
+/* Header */
 #home {
   display: grid;
   height: 100vh;
@@ -55,6 +74,7 @@ a.button:hover {
   color: #ffffff;
 }
 
+/* Nav */
 .navegacion__nav {
   background: #ffffff;
   display: flex;
@@ -140,6 +160,7 @@ a.button:hover {
   color: #222;
 }
 
+/* Nosotros */
 .equipo {
   text-align: center;
 }
@@ -191,6 +212,11 @@ a.button:hover {
   text-transform: uppercase;
 }
 
+#nosotros {
+  padding-top: 3rem;
+}
+
+/* Servicios */
 .contenedor__servicios {
   padding: 0 5rem 0 5rem;
   display: flex;
@@ -253,6 +279,7 @@ a.button:hover {
   margin: 10px 0;
 }
 
+/* Clientes */
 .clientes {
   display: flex;
   flex-flow: row wrap;
@@ -283,6 +310,7 @@ picture span {
   position: absolute;
 }
 
+/* Portfolio */
 .gallery a {
   display: flex;
   justify-content: space-around;
@@ -331,6 +359,7 @@ picture span {
   transition: all 1s;
 }
 
+/* Contacto */
 input[type=text] {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
@@ -428,6 +457,7 @@ textarea {
   transition: all 2s;
 }
 
+/* Footer */
 .footer {
   background-color: #ffffff;
   color: #222;
@@ -521,6 +551,7 @@ ul.social__icons li a img {
   opacity: 1;
 }
 
+/* Base */
 html {
   scroll-behavior: smooth;
 }
@@ -575,10 +606,6 @@ a :hover {
   color: #222;
 }
 
-#nosotros {
-  padding-top: 3rem;
-}
-
 .titulo {
   padding: 3rem 1rem 0;
   text-align: center;
@@ -612,23 +639,6 @@ a :hover {
 .color__claro {
   background: rgb(236, 236, 236);
   background: linear-gradient(359deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background: #ffffff;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #a9a9a9;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222;
 }
 
 @media only screen and (max-width: 1024px) {
