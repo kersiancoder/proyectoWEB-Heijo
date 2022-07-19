@@ -1,0 +1,31 @@
+.gallery__portfolio {
+  width: 100%;
+  transition: all 1s;
+  opacity: 0.8;
+}
+.gallery__portfolio :hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.portfolio__titulo {
+  padding-bottom: var(--spacing-large);
+  text-align: center;
+}
+
+.portfolio__filter {
+  display: inline-block;
+  padding-right: var(--spacing-large);
+}
+
+.portfolio__filter--activo {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 28px;
+}/*# sourceMappingURL=portfolio.css.map */

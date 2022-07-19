@@ -1,0 +1,49 @@
+.gallery {
+    a {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    &__portfolio {
+        width: 100%;
+        transition: all 1s;
+        opacity: 0.8;
+        &:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+    &:hover .gallery__text {
+        opacity: 1;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 28px;
+    &__titulo {
+        padding-bottom: $spacing-large;
+        text-align: center;
+    }
+    &__filter {
+        display: inline-block;
+        padding-right: $spacing-large;
+        &--activo {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+
+.gallery__text {
+    color: $color-secundario;
+    font-size: $text-h2;
+    padding-bottom: $spacing-normal;
+    font-weight: 900;
+    z-index: 1;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: all 1s;
+}

@@ -1,0 +1,15 @@
+.img__facebook {
+  opacity: 0.6;
+  transition: all 1s;
+}
+.img__facebook :hover {
+  opacity: 1;
+}
+
+.img__instagram {
+  opacity: 0.6;
+  transition: all 1s;
+}
+.img__instagram :hover {
+  opacity: 1;
+}/*# sourceMappingURL=footer.css.map */

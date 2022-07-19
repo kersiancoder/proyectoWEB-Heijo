@@ -1,0 +1,52 @@
+#home {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " titulo"
+        " vinetas"
+        " button"
+        ;
+    grid-template-rows: 1fr auto 1fr;
+    row-gap: 20px;
+    background-image: url(../../images/pattern.png);
+}
+
+.vinetas {
+    margin-bottom: $margin-small;
+    padding: 0 $spacing-large;
+    grid-area: vinetas;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+a.button {
+    padding: $spacing-normal $spacing-normal;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: all 1s;
+    letter-spacing: 2px;
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+.bullet {
+    margin: 0 $margin-small ;
+    color: $color-secundario;
+    opacity: .9;
+}
+
+.borde--blanco {
+    background-color: none;
+    border: 2px solid $color-secundario;
+    color: $color-secundario;
+}

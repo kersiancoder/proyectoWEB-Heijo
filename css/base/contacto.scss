@@ -1,0 +1,100 @@
+input {
+    &[type="text"] {
+        font-family: $font-principal;
+        font-size: $text-h3;
+        color: $color-principal;
+        text-transform: uppercase;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 94%;
+        background: $color-secundario;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        border: 0;
+    }
+    &[type="email"] {
+        font-family: $font-principal;
+        font-size: $text-h3;
+        color: $color-principal;
+        text-transform: uppercase;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 94%;
+        background: $color-secundario;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        border: 0;
+    }
+    &[type=reset] {
+        font-family: $font-principal;
+        font-size: $text-h3;
+        background: $color-principal;
+        color: $color-secundario;
+        padding: $spacing-normal $spacing-large;
+        line-height: $text-p;
+        text-transform: uppercase;
+        border-radius: 3px;
+        text-align: center;
+        &:hover {
+            background: $color-secundario;
+            color: $color-principal;
+            transition: all 1s;
+            }
+    }
+    &[type=submit] {
+        font-family: $font-principal;
+        font-size: $text-h3;
+        background: $color-principal;
+        color: $color-secundario;
+        padding: $spacing-normal $spacing-large;
+        line-height: $text-p;
+        text-transform: uppercase;
+        border-radius: 3px;
+        text-align: center;
+        &:hover {
+            background: $color-secundario;
+            color: $color-principal;
+            transition: all 1s;
+            }
+    }
+}
+
+textarea {
+    font-family: $font-principal;
+    font-size: $text-h3;
+    color: $color-principal;
+    text-transform: uppercase;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 94%;
+    background: $color-secundario;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+.formulario__botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario__boton {
+    margin-right: $spacing-extra;
+}
+
+#formulario {
+    input:focus{
+        background-color: #e8f0fe;
+        transition: all 2s;
+    }
+    textarea:focus {
+        background-color: #e8f0fe;
+        transition: all 2s;
+    }
+}

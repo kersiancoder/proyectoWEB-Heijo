@@ -1,0 +1,36 @@
+input[type=text], [type=email], textarea {
+  font-family: var(--font-principal);
+  font-size: var(--text-h3);
+  color: var(--color-principal);
+  text-transform: uppercase;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 94%;
+  background: var(--color-secundario);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+input[type=submit], input[type=reset] {
+  font-family: var(--font-principal);
+  font-size: var(--text-h3);
+  background: var(--color-principal);
+  color: var(--color-secundario);
+  padding: var(--spacing-normal) var(--spacing-large);
+  line-height: var(--text-p);
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.formulario__botones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formulario__boton {
+  margin-right: var(--spacing-extra);
+}/*# sourceMappingURL=contacto.css.map */

@@ -1,0 +1,31 @@
+.navegacion__nav {
+  background: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navegacion__nav__menu {
+  font-size: var(--text-h3);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navegacion__nav--primero {
+  margin-left: 25px;
+}
+
+.navegacion__nav--izquierda {
+  padding-left: 50px;
+}
+
+.navegacion__nav--derecha {
+  padding-right: 50px;
+}
+
+.navegacion__nav nav {
+  display: inherit;
+}/*# sourceMappingURL=nav.css.map */
