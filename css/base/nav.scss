@@ -1,14 +1,12 @@
 .navegacion__nav{
+    @include flex-center;
     background: $color-secundario;
-    display: flex;
-    justify-content: center;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 10;
     &__menu {
         font-size: $text-h3;
-        font-weight: bold;
-        text-transform: uppercase;
+        @include bold-upper;
     }
     &--primero {
         margin-left: 25px;
@@ -24,20 +22,17 @@
     }
 }
 #logo {
-    width: 90px;
-    height: 90px;
+    @include medidas (90px, 90px);
     position: absolute;
     &__mobile {
-        width: 75px;
-        height: 75px;
+        @include medidas (75px, 75px);
         position: relative;
         z-index: 10;
     }
 }
 .div__logo {
-    width: 90px;
-    padding-left: 50px;
-    padding-right: 50px;
+    @include medidas (90px, auto);
+    @include margin-padding (0, 0 50px);
 }
 .hamburger {
     position: absolute;
@@ -52,7 +47,7 @@
         font-size: $text-h3;
         border-color: $color-alternativo;
         padding: $spacing-large;
-        text-transform: uppercase;
+        @include bold-upper;
         border-bottom: dashed;
         border-width: 1px;
         &--ultimo {

@@ -1,23 +1,20 @@
 .gallery {
     a {
-        display: flex;
-        justify-content: space-around;
+        @include flex-around;
         align-items: flex-end;
     }
     &__text {
+        @include bold-upper;
         color: $color-secundario;
         font-size: $text-h2;
         padding-bottom: $spacing-normal;
         font-weight: 900;
         z-index: 1;
-        text-transform: uppercase;
-        opacity: 0.6;
-        transition: all 1s;
+        @include hover-opacity;
     }
     &__portfolio {
         width: 100%;
-        transition: all 1s;
-        opacity: 0.8;
+        @include hover-opacity;
         &:hover {
             transform: scale(1.1);
             opacity: 1;
@@ -28,9 +25,7 @@
     }
 }
 .portfolio {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @include flex-wrap;
     gap: 28px;
     &__titulo {
         padding-bottom: $spacing-large;

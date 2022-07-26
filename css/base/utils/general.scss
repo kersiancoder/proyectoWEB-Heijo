@@ -5,16 +5,13 @@ body {
     font-family: $font-principal;
 }
 h1 {
+    @include flex-end;
+    @include margin-padding (0 0 $margin-small 0, 0);
     font-size: $text-h1;
     color: $color-secundario;
     letter-spacing: $spacing-small;
-    margin-bottom: $margin-small;
     text-transform: uppercase;
     grid-area: titulo;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
 }
 h2 {
     font-size: $text-h2;
@@ -45,7 +42,7 @@ a {
     }
 }
 .titulo {
-    padding: $spacing-extra $spacing-large 0;
+    @include margin-padding (auto,$spacing-extra $spacing-large 0);
     text-align: center;
     &__borde {
         background: none repeat scroll 0 0 $color-alternativo;
@@ -53,28 +50,23 @@ a {
         width: $spacing-full;
         margin-bottom: $margin-large;
         display: block;
-        margin: 0 auto;
+        @include margin-padding (auto,0);
     }
 }
 .subtitulo {
-    margin: $margin-normal 0;
+    @include margin-padding ($margin-normal,0);
     font-size: $text-h3;
 }
 .p-0 {
-    padding-top: $spacing-none;
+    @include margin-padding (0,$spacing-none);
 }
 .contenedor {
-    padding: $margin-large $margin-normal;
-    max-width: 1180px;
-    margin: 0 auto;
+    max-width: $ancho-total;
+    @include margin-padding (auto,$margin-large $margin-normal);
 }
-.color {
-    &__oscuro {
-        background: rgb(236,236,236);
-        background: linear-gradient(179deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
-    }
-    &__claro {
-        background: rgb(236,236,236);
-        background: linear-gradient(359deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%);
+
+@each $nom-color, $bg-color in $colores {
+    .color__#{$nom-color} {
+        background: $bg-color;
     }
 }

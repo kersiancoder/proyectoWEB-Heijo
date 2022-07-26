@@ -1,17 +1,15 @@
 .footer {
     background-color: $color-secundario;
     color: $color-principal;
+    @include center-bold;
     padding: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    z-index: 1000;
-    font-weight: bold;
+    z-index: 10;
     &__contenedor {
         background-color: #e8e8ff;
         box-shadow: rgb(173 173 173) 0px 10px 100px;
-        z-index: 100;
         padding: $spacing-extra 0;
         min-height: $spacing-extra;
     }
@@ -24,19 +22,16 @@ ul.social__icons {
         margin: $spacing-normal;
         display: inline-block;
         a img {
-            width: 35px;
-            height: 35px;
+            @include medidas (35px, 35px);
         }
     }
 }
 .menu__top {
+    @include medidas (40px, 50px);
+    @include margin-padding(-65px 0 0 -20px, auto);
     background-color: $color-principal;
-    height: 50px;
-    width: 40px;
     border-radius: 3px;
     left: 50%;
-    margin-left: -20px;
-    margin-top: -65px;
     position: absolute;
 }
 @keyframes subeflecha{
@@ -44,29 +39,20 @@ ul.social__icons {
     100%{background-position:0 -10px}
 }
 #menu__top__inside {
+    @include medidas (18px, 22px);
     background-image: url(../../images/top_bg.png);
     background-size: 18px 11px;
     background-position: 0 0;
-    height: 22px;
     left: 11px;
     position: absolute;
     top: 14px;
     transition: background-position .3s linear 0s;
-    width: 18px;
     &:hover {
         animation:subeflecha .3s linear infinite
     }
 }
-.img__facebook {
-    opacity: .6;
-    transition: all 1s;
-    &:hover {
-        opacity: 1;
-    }
-}
-.img__instagram {
-    opacity: .6;
-    transition: all 1s;
+.img__facebook, .img__instagram {
+    @include hover-opacity;
     &:hover {
         opacity: 1;
     }

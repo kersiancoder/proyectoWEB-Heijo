@@ -1,15 +1,11 @@
 .clientes {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    max-width: 850px;
-    margin: 0 auto;
+    @include flex-wrap;
+    max-width: ($ancho-total)/1.4;
+    @include margin-padding (auto,0);
     gap: 28px;
     img {
         filter: grayscale(100%);
-        transition: .3s ease-in-out;
-        width: 150px;
-        height: 150px;
+        @include medidas (150px, 150px);
         transition: all 1s;
     }
     picture {
@@ -18,9 +14,6 @@
             filter: grayscale(0);
             transform: scale(1.1);
         }
-    }
-    &__img {
-        transition: transform 1s;
     }
 }
 picture span {

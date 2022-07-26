@@ -1,15 +1,13 @@
 .contenedor__servicios {
-    padding: 0 $margin-extra 0 $margin-extra;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+    @include flex-wrap;
+    @include margin-padding (0, 0 $margin-extra);
     &__izquierda {
         margin-right: $spacing-large;
         width: 48%;
     }
     &__derecha {
         margin-left: $spacing-large;
-    width: 48%;
+        width: 48%;
     }
 }
 .fa {

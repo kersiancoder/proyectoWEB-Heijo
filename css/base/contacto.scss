@@ -1,98 +1,36 @@
-input {
-    &[type="text"] {
-        font-family: $font-principal;
-        font-size: $text-h3;
-        color: $color-principal;
-        text-transform: uppercase;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        width: 94%;
-        background: $color-secundario;
-        border-radius: 3px;
-        margin-bottom: 20px;
-        border: 0;
-    }
-    &[type="email"] {
-        font-family: $font-principal;
-        font-size: $text-h3;
-        color: $color-principal;
-        text-transform: uppercase;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        width: 94%;
-        background: $color-secundario;
-        border-radius: 3px;
-        margin-bottom: 20px;
-        border: 0;
-    }
-    &[type=reset] {
-        font-family: $font-principal;
-        font-size: $text-h3;
-        background: $color-principal;
-        color: $color-secundario;
-        padding: $spacing-normal $spacing-large;
-        line-height: $text-p;
-        text-transform: uppercase;
-        border-radius: 3px;
-        text-align: center;
-        &:hover {
-            background: $color-secundario;
-            color: $color-principal;
-            transition: all 1s;
-            }
-    }
-    &[type=submit] {
-        font-family: $font-principal;
-        font-size: $text-h3;
-        background: $color-principal;
-        color: $color-secundario;
-        padding: $spacing-normal $spacing-large;
-        line-height: $text-p;
-        text-transform: uppercase;
-        border-radius: 3px;
-        text-align: center;
-        &:hover {
-            background: $color-secundario;
-            color: $color-principal;
-            transition: all 1s;
-            }
-    }
-}
-textarea {
-    font-family: $font-principal;
-    font-size: $text-h3;
+input[type="text"], input[type="email"], textarea {
+    @include inputs;
+    @include margin-padding(0 0 20px 0, 15px 3% 15px 3%);
     color: $color-principal;
-    text-transform: uppercase;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 15px;
-    padding-bottom: 15px;
     width: 94%;
     background: $color-secundario;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    border: 0;
+}
+input[type=reset], input[type=submit] {
+    @include inputs;
+    @include margin-padding (20px,$spacing-normal $spacing-large);
+    color: $color-secundario;
+    background: $color-principal;
+    line-height: $text-p;
+    text-align: center;
+    &:hover {
+        background: $color-secundario;
+        color: $color-principal;
+        transition: all 1s;
+        }
 }
 .formulario {
     &__botones {
-        display: flex;
-        justify-content: space-around;
+        @include flex-around;
     }
     &__boton {
-        margin-right: $spacing-extra;
+        @include margin-padding (0 $spacing-extra, 0);
     }
 }
 #formulario {
-    input:focus{
-        background-color: #e8f0fe;
-        transition: all 2s;
-    }
-    textarea:focus {
+    input:focus, textarea:focus{
         background-color: #e8f0fe;
         transition: all 2s;
     }
 }
+
+

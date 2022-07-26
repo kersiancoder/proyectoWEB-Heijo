@@ -3,10 +3,10 @@
         display: none;
     }
     .navegacion__nav {
-        height: 60px;
+        @include medidas (auto, 60px);
     }
     .one__half {
-        width: 100%;
+        @include medidas (100%, auto);
         margin-left: 0%;
     }
     
@@ -39,7 +39,6 @@
         height: 0;
     }
 }
-
 @media only screen and (min-width: 1025px) {
     #menu_mobile {
         display: none;
