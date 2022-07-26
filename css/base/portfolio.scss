@@ -13,8 +13,9 @@
         @include hover-opacity;
     }
     &__portfolio {
-        width: 100%;
+        @include medidas (440px, 200px);
         @include hover-opacity;
+        background: center;
         &:hover {
             transform: scale(1.1);
             opacity: 1;
@@ -38,5 +39,10 @@
             font-weight: bold;
             text-decoration: underline;
         }
+    }
+}
+@each $portfolio in $portfolios {
+    .#{$portfolio} {
+        background-image: url("../../images/#{$portfolio}.jpg");
     }
 }
