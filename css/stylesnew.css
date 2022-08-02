@@ -173,7 +173,7 @@ a :hover {
   grid-template-areas: " titulo" " vinetas" " button";
   grid-template-rows: 1fr auto 1fr;
   row-gap: 20px;
-  background-image: url(../../images/pattern.png);
+  background-image: url(../images/pattern.png);
 }
 
 .vinetas {
