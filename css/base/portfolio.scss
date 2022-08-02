@@ -40,8 +40,3 @@
         }
     }
 }
-@each $portfolio in $portfolios {
-    .#{$portfolio} {
-        background-image: url("../../images/#{$portfolio}.jpg");
-    }
-}
