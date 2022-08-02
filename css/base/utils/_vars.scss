@@ -48,7 +48,7 @@ $clientes: (cliente1, cliente2, cliente3, cliente4, cliente5, cliente6, cliente7
 
 @each $cliente in $clientes {
     .#{$cliente} {
-        background-image: url("./images/#{$cliente}.jpg");
+        background-image: url("../../../images/#{$cliente}.jpg");
     }
 }
 
@@ -56,6 +56,6 @@ $portfolios: (portfolio1, portfolio2, portfolio3, portfolio4);
 
 @each $portfolio in $portfolios {
     .#{$portfolio} {
-        background-image: url("./images/#{$portfolio}.jpg");
+        background-image: url("../../../images/#{$portfolio}.jpg");
     }
 }
