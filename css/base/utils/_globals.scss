@@ -14,14 +14,14 @@ body {
 h1 {
     @include flex(row, center, flex-end);
     @include margin-padding (0 0 $margin-small 0, 0);
-    font-size: $text-h1;
+    font-size: map-get($fuentes , text-h1);
     color: $color-secundario;
     letter-spacing: $spacing-small;
     text-transform: uppercase;
     grid-area: titulo;
 }
 h2 {
-    font-size: $text-h2;
+    font-size: map-get($fuentes , text-h2);
     color: $color-principal;
     letter-spacing: $spacing-small;
     margin-bottom: $margin-small;
@@ -29,13 +29,13 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    font-size: $text-h3;
+    font-size: map-get($fuentes , text-h3);
     color: $color-principal;
     text-transform: uppercase;
 }
 p {
     font-family: $font-p;
-    font-size: $text-p;
+    font-size: map-get($fuentes , text-p);
     color: $color-alternativo;
 }
 li {
@@ -62,7 +62,7 @@ a {
 }
 .subtitulo {
     @include margin-padding ($margin-normal,0);
-    font-size: $text-h3;
+    font-size: map-get($fuentes , text-h3);
 }
 .p-0 {
     @include margin-padding (0,$spacing-none);

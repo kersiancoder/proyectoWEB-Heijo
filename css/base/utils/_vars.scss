@@ -10,13 +10,6 @@ $color-alternativo: #a9a9a9;
 $font-principal: 'Oswald', sans-serif;
 $font-p: 'Open Sans', sans-serif;
 
-// Font Sizes
-$text-h1: 4em;
-$text-h2: 2.4em;
-$textfa: 2em;
-$text-h3: 1.2em;
-$text-p: 1em;
-
 // Spacings
 $spacing-none: 0;
 $spacing-small: 0.2rem;
@@ -32,6 +25,13 @@ $margin-large: 3rem;
 $margin-extra: 5rem;
 
 //Mapeo
+$fuentes: (
+text-h1: 4em,
+text-h2: 2.4em,
+text-fa: 2em,
+text-h3: 1.2em,
+text-p: 1em,
+);
 
 $colores: (
     claro: linear-gradient(179deg, rgba(236,236,236,0.311659698058911) 0%, rgba(232,232,255,1) 50%),

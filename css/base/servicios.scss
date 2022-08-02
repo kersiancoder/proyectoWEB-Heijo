@@ -12,7 +12,7 @@
 }
 .fa {
     &-stack {
-        font-size: $textfa;
+        font-size: map-get($fuentes , text-fa);
         color: $color-alternativo;
         transition: all 1s;
         margin-bottom: 120px;

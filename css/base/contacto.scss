@@ -10,7 +10,7 @@ input[type=reset], input[type=submit] {
     @include margin-padding (20px,$spacing-normal $spacing-large);
     color: $color-secundario;
     background: $color-principal;
-    line-height: $text-p;
+    line-height: map-get($fuentes , text-p);
     text-align: center;
     &:hover {
         background: $color-secundario;

@@ -34,7 +34,7 @@
 
 @mixin inputs{
     font-family: $font-principal;
-    font-size: $text-h3;
+    font-size: map-get($fuentes , text-h3);
     text-transform: uppercase;
     border-radius: 3px;
     border: 0;

@@ -5,7 +5,7 @@
     top: 0;
     z-index: 10;
     &__menu {
-        font-size: $text-h3;
+        font-size: map-get($fuentes , text-h3);
         @include bold-upper;
     }
     &--primero {
@@ -44,7 +44,7 @@
         display: none;
     } 
     &__menu {
-        font-size: $text-h3;
+        font-size: map-get($fuentes , text-h3);
         border-color: $color-alternativo;
         padding: $spacing-large;
         @include bold-upper;
@@ -59,7 +59,7 @@
     }
 }
 .show__menu {
-    font-size: $text-h3;
+    font-size: map-get($fuentes , text-h3);
     display: block;
     position: absolute;
     background-color: #f1f1f1;
