@@ -1,0 +1,41 @@
+//Mixins
+
+@mixin hover-opacity {
+    opacity: 0.6;
+    transition: all 1s;
+}
+
+@mixin center-bold {
+    text-align: center;
+    font-weight: bold;
+}
+
+@mixin bold-upper {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@mixin medidas($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin margin-padding($m, $p){
+    margin: $m;
+    padding: $p;
+}
+
+@mixin flex($flow, $justify, $align){
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin inputs{
+    font-family: $font-principal;
+    font-size: $text-h3;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 0;
+}

@@ -1,8 +1,8 @@
-/* Reset */
-@import "base/utils/reset";
-
 // Vars
 @import "base/utils/_vars";
+
+// Mixins
+@import "base/utils/_mixins";
 
 /* Scrollbar */
 @import "base/utils/scrollbar";

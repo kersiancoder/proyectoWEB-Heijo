@@ -20,7 +20,7 @@ input[type=reset], input[type=submit] {
 }
 .formulario {
     &__botones {
-        @include flex-around;
+        @include flex (row, space-around, unset);
     }
     &__boton {
         @include margin-padding (0 $spacing-extra, 0);

@@ -1,6 +1,6 @@
 #home {
-    display: grid;
     @include medidas (auto,100vh);
+    display: grid;
     grid-template-areas:
         " titulo"
         " vinetas"
@@ -11,12 +11,12 @@
     background-image: url(../../images/pattern.png);
 }
 .vinetas {
-    @include flex-wrap;
+    @include flex (row wrap, center, unset);
     @include margin-padding (0 0 $margin-small, 0 $spacing-large);
     grid-area: vinetas;
 }
 .button {
-    @include flex-wrap;
+    @include flex (row wrap, center, unset);
     align-items: flex-start;
 }
 a.button {

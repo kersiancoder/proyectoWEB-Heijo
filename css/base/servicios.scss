@@ -1,5 +1,5 @@
 .contenedor__servicios {
-    @include flex-wrap;
+    @include flex (row wrap, center, unset);
     @include margin-padding (0, 0 $margin-extra);
     &__izquierda {
         margin-right: $spacing-large;

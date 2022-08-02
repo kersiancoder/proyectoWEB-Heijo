@@ -1,3 +1,10 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -5,7 +12,7 @@ body {
     font-family: $font-principal;
 }
 h1 {
-    @include flex-end;
+    @include flex(row, center, flex-end);
     @include margin-padding (0 0 $margin-small 0, 0);
     font-size: $text-h1;
     color: $color-secundario;

@@ -1,7 +1,6 @@
 .gallery {
     a {
-        @include flex-around;
-        align-items: flex-end;
+        @include flex (row, space-around, flex-end);
     }
     &__text {
         @include bold-upper;
@@ -26,7 +25,7 @@
     }
 }
 .portfolio {
-    @include flex-wrap;
+    @include flex (row wrap, center, unset);
     gap: 28px;
     &__titulo {
         padding-bottom: $spacing-large;

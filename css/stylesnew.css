@@ -1,11 +1,44 @@
-/* Reset */
-*::after,
-*::before,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
-} /* Scrollbar */
+.color__claro {
+  background: linear-gradient(179deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);
+}
+
+.color__oscuro {
+  background: linear-gradient(359deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);
+}
+
+.cliente1 {
+  background-image: url("../../images/cliente1.jpg");
+}
+
+.cliente2 {
+  background-image: url("../../images/cliente2.jpg");
+}
+
+.cliente3 {
+  background-image: url("../../images/cliente3.jpg");
+}
+
+.cliente4 {
+  background-image: url("../../images/cliente4.jpg");
+}
+
+.cliente5 {
+  background-image: url("../../images/cliente5.jpg");
+}
+
+.cliente6 {
+  background-image: url("../../images/cliente6.jpg");
+}
+
+.cliente7 {
+  background-image: url("../../images/cliente7.jpg");
+}
+
+.cliente8 {
+  background-image: url("../../images/cliente8.jpg");
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -21,6 +54,14 @@
 }
 
 /* Globals */
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -31,9 +72,9 @@ body {
 
 h1 {
   display: flex;
-  align-items: flex-end;
+  flex-flow: row;
   justify-content: center;
-  text-align: center;
+  align-items: flex-end;
   margin: 0 0 1rem 0;
   padding: 0;
   font-size: 4em;
@@ -108,19 +149,11 @@ a :hover {
   padding: 3rem 1.5rem;
 }
 
-.color__claro {
-  background: linear-gradient(179deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);
-}
-
-.color__oscuro {
-  background: linear-gradient(359deg, rgba(236, 236, 236, 0.3116596981) 0%, rgb(232, 232, 255) 50%);
-}
-
 /* Header */
 #home {
-  display: grid;
   width: auto;
   height: 100vh;
+  display: grid;
   grid-template-areas: " titulo" " vinetas" " button";
   grid-template-rows: 1fr auto 1fr;
   row-gap: 20px;
@@ -131,6 +164,7 @@ a :hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: unset;
   margin: 0 0 1rem;
   padding: 0 1rem;
   grid-area: vinetas;
@@ -140,6 +174,7 @@ a :hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: unset;
   align-items: flex-start;
 }
 
@@ -170,7 +205,9 @@ a.button:hover {
 /* Nav */
 .navegacion__nav {
   display: flex;
+  flex-flow: row;
   justify-content: center;
+  align-items: unset;
   background: #ffffff;
   position: -webkit-sticky;
   position: sticky;
@@ -304,6 +341,7 @@ a.button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: unset;
   margin: 0;
   padding: 0 5rem;
 }
@@ -364,6 +402,7 @@ a.button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: unset;
   max-width: 842.8571428571px;
   margin: auto;
   padding: 0;
@@ -387,41 +426,10 @@ picture span {
   position: absolute;
 }
 
-.cliente1 {
-  background-image: url("../../images/cliente1.jpg");
-}
-
-.cliente2 {
-  background-image: url("../../images/cliente2.jpg");
-}
-
-.cliente3 {
-  background-image: url("../../images/cliente3.jpg");
-}
-
-.cliente4 {
-  background-image: url("../../images/cliente4.jpg");
-}
-
-.cliente5 {
-  background-image: url("../../images/cliente5.jpg");
-}
-
-.cliente6 {
-  background-image: url("../../images/cliente6.jpg");
-}
-
-.cliente7 {
-  background-image: url("../../images/cliente7.jpg");
-}
-
-.cliente8 {
-  background-image: url("../../images/cliente8.jpg");
-}
-
 /* Portfolio */
 .gallery a {
   display: flex;
+  flex-flow: row;
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -455,6 +463,7 @@ picture span {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: unset;
   gap: 28px;
 }
 .portfolio__titulo {
@@ -521,7 +530,9 @@ input[type=reset]:hover, input[type=submit]:hover {
 
 .formulario__botones {
   display: flex;
+  flex-flow: row;
   justify-content: space-around;
+  align-items: unset;
 }
 .formulario__boton {
   margin: 0 3rem;
