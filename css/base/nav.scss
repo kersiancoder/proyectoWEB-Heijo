@@ -1,5 +1,5 @@
 .navegacion__nav{
-    @include flex (row, center, unset);
+    @include flex (row, center, null);
     background: $color-secundario;
     position: sticky;
     top: 0;

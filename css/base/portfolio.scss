@@ -24,7 +24,7 @@
     }
 }
 .portfolio {
-    @include flex (row wrap, center, unset);
+    @include flex (row wrap, center, null);
     gap: 28px;
     &__titulo {
         padding-bottom: $spacing-large;

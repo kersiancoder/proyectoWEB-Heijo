@@ -180,7 +180,6 @@ a :hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: unset;
   margin: 0 0 1rem;
   padding: 0 1rem;
   grid-area: vinetas;
@@ -190,7 +189,6 @@ a :hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: unset;
   align-items: flex-start;
 }
 
@@ -223,7 +221,6 @@ a.button:hover {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  align-items: unset;
   background: #ffffff;
   position: -webkit-sticky;
   position: sticky;
@@ -357,7 +354,6 @@ a.button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: unset;
   margin: 0;
   padding: 0 5rem;
 }
@@ -418,7 +414,6 @@ a.button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: unset;
   max-width: 842.8571428571px;
   margin: auto;
   padding: 0;
@@ -478,7 +473,6 @@ picture span {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: unset;
   gap: 28px;
 }
 .portfolio__titulo {
@@ -531,7 +525,6 @@ input[type=reset]:hover, input[type=submit]:hover {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  align-items: unset;
 }
 .formulario__boton {
   margin: 0 3rem;

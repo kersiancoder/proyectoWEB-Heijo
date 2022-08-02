@@ -1,5 +1,5 @@
 .clientes {
-    @include flex (row wrap, center, unset);
+    @include flex (row wrap, center, null);
     max-width: ($ancho-total)/1.4;
     @include margin-padding (auto,0);
     gap: 28px;

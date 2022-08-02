@@ -11,12 +11,12 @@
     background-image: url(../../images/pattern.png);
 }
 .vinetas {
-    @include flex (row wrap, center, unset);
+    @include flex (row wrap, center, null);
     @include margin-padding (0 0 $margin-small, 0 $spacing-large);
     grid-area: vinetas;
 }
 .button {
-    @include flex (row wrap, center, unset);
+    @include flex (row wrap, center, null);
     align-items: flex-start;
 }
 a.button {
