@@ -19,8 +19,3 @@ picture {
         position: absolute;
     }
 }
-@each $cliente in $clientes {
-    .#{$cliente} {
-        background-image: url("../../images/#{$cliente}.jpg");
-    }
-}

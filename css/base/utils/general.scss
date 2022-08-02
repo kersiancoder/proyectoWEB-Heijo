@@ -64,9 +64,3 @@ a {
     max-width: $ancho-total;
     @include margin-padding (auto,$margin-large $margin-normal);
 }
-
-@each $nom-color, $bg-color in $colores {
-    .color__#{$nom-color} {
-        background: $bg-color;
-    }
-}
