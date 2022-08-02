@@ -465,7 +465,6 @@ picture span {
   height: 200px;
   opacity: 0.6;
   transition: all 1s;
-  background: center;
 }
 .gallery__portfolio:hover {
   transform: scale(1.1);

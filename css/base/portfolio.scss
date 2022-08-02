@@ -14,7 +14,6 @@
     &__portfolio {
         @include medidas (440px, 200px);
         @include hover-opacity;
-        background: center;
         &:hover {
             transform: scale(1.1);
             opacity: 1;
