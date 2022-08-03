@@ -321,7 +321,6 @@ a.button:hover {
 }
 .equipo__image {
   width: 100%;
-  height: auto;
   opacity: 1;
   display: block;
   transition: 0.6s ease;

@@ -20,7 +20,7 @@
         }
     }
     &__image {
-        @include medidas (100%, auto);
+        @include medidas (100%, null);
         opacity: 1;
         display: block;
         transition: .6s ease;
