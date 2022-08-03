@@ -25,7 +25,7 @@
     @include medidas (90px, 90px);
     position: absolute;
     &__mobile {
-        @include medidas (75px, 75px);
+        @include medidas (77px, 68px);
         position: relative;
         z-index: 10;
     }
